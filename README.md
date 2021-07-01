@@ -64,6 +64,58 @@ Advanced Physical Design - OpenLANE Workshop
    - Global placements : 
    - Detailed placements :
  ![](images/16.png)
+* Step 4 : Clock Tree Synthesis
+![](images/17.png)
+* Step 5 : Routing
+![](images/18.png)
+  - Metal Tracks form Routing grid that is large
+  - Divide and Conquer approach
+    - Global routing : generates routing guides(Fine grain grids)
+    - Deatiled routing : uses the routing guides to implement the actual wiring(Coarse grain Grids)
+ * Step 6 : Sign off/Layout
+ ![](images/19.png)
+ **_4. Open Source ASIC Flow with Openlane and Strive Chipsets_**
+ * Openlane : Open Source Flow for a *True* open source Tapeout experiment
+ * efabless has a family of Soc's calles as Strive( Open PDK, Open EDA, Open RTL); SoC family
+ *![](images/20.png)
+ * Main goal of Openlane ASIC is *Clean* GDSII with no human interventions; No LVS or DRC or Timing violations
+ * Openlane is tuned for Skywater 130nm PDK
+ * Openlane Operation
+   - Autonomous : Push button approach
+   - Interactive : allows to execute commands and experiment
+ * Openlane Design Space exploration : Finds the best set of flow configurations
+ * Openlane Design examples : 43 design examples with best configurations
+ **_5. Openlane detailed ASIC Flow_**
+  *![](images/21.png)
+  * Integrated tools of OpenLane 
+    - OpenRoad
+    - magic VLSI layout Tool
+    - K Layout
+    - Fault
+    - Yosys
+    - Qflow
+    - ABC
+  * RTL Synthesis : RTL is fed to *Yosys* with design constraints
+     - Synthesis exploartion
+     - Design exploartion : sweep across various configurations and obtain the best one; Openlane regression testing run on 70 designs and obtained the best
+  * DFT : Uses *Fault* for Testing ; Optional
+  * Physical Implementation/ Automated PnR(Place and Route) : use *OpenRoad* tool
+  * LEC(Logic Equivalence Check): Compares *netlist obtained after optimization during Physical implementation* with *Gate level netlist* obtained after RTL synthesis : Uses         *Yosys* tool
+  * Dealing with Antenna Rules violation :
+    - Fabricated metal wire segment(long) can act as antenna -> collects charges and damages transistor gates during fabrication
+  ![](images/22.png) 
+    - Solutions :
+      - Bridging
+      - Add antenna diode cell to leak away charges
+   ![](images/23.png)  
+   ![](images/24.png) 
+**_6. RC Extraction :_** DEF2SPEF
+**_7. Static Timing analysis_**
+* Open STA using OpenRoad; Output of this stage is a set of Timing parameters that can specify violations if any
+**_8. Physiscal Signoff_** 
+* DRC & LVS
+* DRC and Spice extraction from Layout : Magic 
+* LVS : Magic and Netgen
 
 
 
