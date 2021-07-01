@@ -31,4 +31,20 @@ Advanced Physical Design - OpenLANE Workshop
 ![](images/7.png)
 * Detailed flow
 ![](images/8.png)
+#### II. SoC DESIGN AND OPENLANE
+**_1. Components of Open Source digital ASIC design_**
+* Components
+   - RTL IP's
+   - EDA Tools
+   - PDK's(Process Design Kits)
+![](images/9.png)
+* In *Age of Gods*, design industry and Technology(Manufacturing) were closely related. 
+* Lynn Convay and Carver Mead emphasized seperation of both design and technology industries; proposed *structured* design methodology based on Lambda rules; emerging of *Pure Play* and *efabless* companies
+* Collection of files to model a fabrication process for EDA tools to design an IC
+   - Process Design rules : DRC, LVS, PEX
+   - Device Models
+   - Digital Standard Libraries
+   - I/O libraries
+
+
 
