@@ -3,8 +3,12 @@ Advanced Physical Design - OpenLANE Workshop
 <summary>Contents</summary>
 
 + #### [Day 1 - Inception of Opensource EDA](https://github.com/Anitha-Juliette/Openlane#Day1-Inception_of_Opensource_EDA)
-    +  ##### [Skywater PDK files](https://github.com/Anitha-Juliette/Openlane#Skywater_PDK_files)
+    +  ##### [Talk with Computers](https://github.com/Anitha-Juliette/Openlane#Talk_with_Computers)
     +  ##### [Invoking Openlane](https://github.com/Anitha-Juliette/Openlane#Invoking_Openlane)
 
 </details>
+Talk with Computers
+Chip on a board with its Peripherals
+
+![](images/1.png)
 
