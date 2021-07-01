@@ -109,13 +109,14 @@ Advanced Physical Design - OpenLANE Workshop
       - Add antenna diode cell to leak away charges
    ![](images/23.png)  
    ![](images/24.png) 
-**_6. RC Extraction :_** DEF2SPEF
-**_7. Static Timing analysis_**
-* Open STA using OpenRoad; Output of this stage is a set of Timing parameters that can specify violations if any
-**_8. Physiscal Signoff_** 
-* DRC & LVS
-* DRC and Spice extraction from Layout : Magic 
-* LVS : Magic and Netgen
+
+ **_6. RC Extraction :_**  DEF2SPEF
+ **_7. Static Timing analysis_**
+      * Open STA using OpenRoad; Output of this stage is a set of Timing parameters that can specify violations if any
+ **_8. Physiscal Signoff_** 
+  * DRC & LVS
+  * DRC and Spice extraction from Layout : Magic 
+  * LVS : Magic and Netgen
 
 
 
