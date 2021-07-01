@@ -17,7 +17,7 @@ Advanced Physical Design - OpenLANE Workshop
 ![](images/2.png)
 * Deep inside the Chip
 ![](images/3.png)
-**_RISC_V Architecture_**
+**_2. RISC_V Architecture_**
 * C program -->converted to RISC-V assembly language program --> converted to machine language(binary) code --> run on RISC architecture(layout)
 * Inbetween the RISC-V architecture specifications and Layout, RTL is sandwiched
 * RTL implements the RISC-V architecture specifications and generates Layout
