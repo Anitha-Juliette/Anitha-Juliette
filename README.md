@@ -11,6 +11,7 @@ Advanced Physical Design - OpenLANE Workshop
 #### Day 1 - Inception of Opensource EDA
 ##### Talk with Computers
 1. Chip on a board with its Peripherals
-
 ![](images/1.png)
+2. Package and Chip inside Package
+![](images/2.png)
 
