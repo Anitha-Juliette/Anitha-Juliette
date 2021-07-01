@@ -48,6 +48,15 @@ Advanced Physical Design - OpenLANE Workshop
    - Digital Standard Libraries
    - I/O libraries
  **_3. ASIC Flow Objective : RTL to GDSII (Automated PnR and/or Physical Implementation)_**
+ * Simplified RTL2GDSII design flow
+ ![](images/11.png)
+ * Step 1 : Synthesis
+ ![](images/12.png)
+ * Step2 : Floor and Power planning
+    - Foor Planning
+      - Chip Floor planning
+      - Macro Floor planning
+ ![](images/13.png)
 
 
 
