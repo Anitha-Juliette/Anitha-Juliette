@@ -24,11 +24,11 @@ Advanced Physical Design - OpenLANE Workshop
 ![](images/4.png)
 **_3. Software Applications to Hardware_**
 * Typical flow from software app to hardware
-* ![](images/5.png)
+![](images/5.png)
 * Flow illustrated with *Clock Timer* app
-* ![](images/6.png)
+![](images/6.png)
 * Abstract interface
-* ![](images/7.png)
+![](images/7.png)
 * Detailed flow
-* ![](images/8.png)
+![](images/8.png)
 
