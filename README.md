@@ -7,8 +7,10 @@ Advanced Physical Design - OpenLANE Workshop
     +  ##### [](https://github.com/Anitha-Juliette/Openlane#Invoking_Openlane)
 
 </details>
-Talk with Computers
-Chip on a board with its Peripherals
+
+#### Day 1 - Inception of Opensource EDA
+##### Talk with Computers
+1. Chip on a board with its Peripherals
 
 ![](images/1.png)
 
