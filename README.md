@@ -57,6 +57,13 @@ Advanced Physical Design - OpenLANE Workshop
       - Chip Floor planning
       - Macro Floor planning
  ![](images/13.png)
+     - Power planning : Uses upper metal layers rather than lower metal layers
+ ![](images/14.png)
+ * Step 3 : Placement - Macros will place cells(gate level netlist) onto virtual rows. The cells should be placed close so as to ensure proer routing
+ ![](images/15.png)
+   - Global placements : 
+   - Detailed placements :
+ ![](images/16.png)
 
 
 
