@@ -124,35 +124,43 @@ Advanced Physical Design - OpenLANE Workshop
   - ls -- help --> will list the linux commands
   - clear --> clear page
  * Exploring Openlane Working Directory
-   - From *Desktop/work/tools/*, list the files
+   - From *Desktop/work/tools$ ls -ltr*, list the files
      - All tool directories such as openlane working dir, magic, skywater etc.. will be listed
-   - From *Desktop/work/tools/openlane_working_dir*, list the files
+   - From *Desktop/work/tools/openlane_working_dir$ ls -ltr*, list the files
      - openlane
      - pdks
   * Exploring *pdks*
-   - From *Desktop/work/tools/openlane_working_dir/pdks*, list the files
+   - From *Desktop/work/tools/openlane_working_dir/pdks$ ls -ltr*, list the files
      - skywater-pdk : foundry files used for commercialized tools; not for open source tools
      - open_pdks : scripts that converts foundry pdks to be compatible with open source tools
      - sky130A : pdk that is made compatible with open source environment
-   - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A*, list the files
+   - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A$ ls -ltr*, list the files
      - libs.ref : contains technology process specific files
      - libs.tech : contains files specific tools
-  - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech*, list the files
+  - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech$ ls -ltr*, list the files
   - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.ref*, list the files
   ![](images/25.png)
-  - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.ref/sky130_fd_sc_hd*, list the files; fd--> foundry sc--> standard cell hd --> variant of pdk *high density*
+  - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.ref/sky130_fd_sc_hd$ ls -lrt*, list the files; fd--> foundry sc--> standard cell hd --> variant of pdk *high density*
     - techlef : technolgy layer information
     - lib : timing information(PVT corners)
     - much more..
   ![](images/26.png)
   * Exploring *openlane*
-    - From *Desktop/work/tools/openlane_working_dir/openlane*, *docker run* and then list files
+    - From *Desktop/work/tools/openlane_working_dir/openlane$docker*, run docker and then list files
     - bash-4.25 *ls  -ltr*
     - bash-4.25 *.flow/tcl -interactive*
     - % *package require openlane 0.9* 
        - ![](images/27.png)
-       - Exploring designs : From *Desktop/work/tools/openlane_working_dir/openlane/designs*, list the files
+       - Exploring designs : From *Desktop/work/tools/openlane_working_dir/openlane/designs$ ls -ltr*, list the files
        - Among the various *designs* in openlane we choose *picorv32a*
+       - From *Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ ls -ltr*, list the files
+         - src : contains the verilog file of the RTL design chosen
+         - config.tcl : bypasses the prviously set configurations in the openlane flow
+       - ![](images/28.png)
+       - *Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ less config.tcl*
+       - ![](images/29.png)
+   - *% prep -design picorv32a* : design preparation stage : merges LEF's
+       - ![](images/30.png) 
    
 
 
