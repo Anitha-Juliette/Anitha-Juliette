@@ -171,10 +171,14 @@ Advanced Physical Design - OpenLANE Workshop
        - logs
        - reports
        - config.tcl
+       -
   ![](images/31.png)
   ![](images/32.png)
+  
   * Review files after design preparation step and run synthesis
-   - *run_synthesis*
+   - *run_synthesis* : Obtain Static timing analysis and Chip area 
  ![](images/33.png) 
-
+**_7. Steps to characterize synthesis results**
+**_8. Openlane Github link**
+* efabless openlane github : detailed study in this link
 
