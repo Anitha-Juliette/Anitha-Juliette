@@ -179,6 +179,19 @@ Advanced Physical Design - OpenLANE Workshop
    - *run_synthesis* : Obtain Static timing analysis and Chip area 
  ![](images/33.png) 
 **_7. Steps to characterize synthesis results**
+* Objectives
+  - Flop ratio : (Number of D flip flops/ Total number of cells)*100 = 1613/14876 = 9.06%
+  ![](images/34.png)
+  - To see how the results were populated in the run folder
+    */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results$ ls -ltr*
+    */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results/synthesis/$ ls -ltr* : Viewing this at this stage shows the synthesised netlist picorv32a.synthesis.v
+![](images/35.png)
+    - View synthesised netlist : */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results/synthesis$ less picorv32a.synthesis.v* : abc has completed all mappings
+![](images/36.png)
+    - To see how the reports were populated in the run folder
+      */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/reports$ ls -ltr*
+      */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/reports/synthesis/$ ls -ltr*
+      
 **_8. Openlane Github link**
 * efabless openlane github : detailed study in this link
 
