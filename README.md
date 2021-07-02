@@ -194,4 +194,5 @@ Advanced Physical Design - OpenLANE Workshop
 ![](images/37.png)     
 **_8. Openlane Github link**
 * efabless openlane github : detailed study in this link
+### Day 2 - Floor planning
 
