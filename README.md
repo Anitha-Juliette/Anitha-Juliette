@@ -148,7 +148,7 @@ Advanced Physical Design - OpenLANE Workshop
   * Exploring *openlane*
     - From *Desktop/work/tools/openlane_working_dir/openlane$docker*, run docker and then list files
     - bash-4.25 *ls  -ltr*
-    - bash-4.25 *.flow/tcl -interactive*
+    - bash-4.25 *./flow.tcl -interactive*
     - % *package require openlane 0.9* 
       ![](images/27.png)
        - Exploring designs : From *Desktop/work/tools/openlane_working_dir/openlane/designs$ ls -ltr*, list the files
@@ -159,9 +159,22 @@ Advanced Physical Design - OpenLANE Workshop
          ![](images/28.png)
        - *Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ less config.tcl*
          ![](images/29.png)
+ * Design preparation step
    - *% prep -design picorv32a* : design preparation stage : merges LEF's
-      ![](images/30.png) 
-   
-
+   ![](images/30.png) 
+   - AFter the design prepartion stage, execute *Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ less config.tcl* ; *runs* directory is created
+    - *anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs$ ls -ltr* creates 4 folders.
+    - */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_10-07$ ls -ltr* Open the folder that contains date. This creates the directories required for the openlane
+       - cmds.logs
+       - tmp
+       - results
+       - logs
+       - reports
+       - config.tcl
+  ![](images/31.png)
+  ![](images/32.png)
+  * Review files after design preparation step and run synthesis
+   - *run_synthesis*
+ ![](images/33.png) 
 
 
