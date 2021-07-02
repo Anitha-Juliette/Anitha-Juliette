@@ -109,14 +109,36 @@ Advanced Physical Design - OpenLANE Workshop
       - Add antenna diode cell to leak away charges
    ![](images/23.png)  
    ![](images/24.png) 
-
- **_6. RC Extraction :_**  DEF2SPEF
- **_7. Static Timing analysis_**
+  * RC Extraction :  DEF2SPEF
+  * Static Timing analysis
       * Open STA using OpenRoad; Output of this stage is a set of Timing parameters that can specify violations if any
- **_8. Physiscal Signoff_** 
+  * Physiscal Signoff 
   * DRC & LVS
   * DRC and Spice extraction from Layout : Magic 
   * LVS : Magic and Netgen
+**_6. Openlane Directory structure in detail**
+* Empty Linux terminal -> own directory
+* Basic Linux commands
+  - cd work/tools/ --> Change directory
+  - ls -ltr --> List files
+  - ls -- help --> will list the linux commands
+  - clear --> clear page
+ * Exploring Openlane
+   - From *Desktop/work/tools/*, list the files
+     - All tool directories such as openlane working dir, magic, skywater etc.. will be listed
+   - From *Desktop/work/tools/openlane_working_dir*, list the files
+     - openlane
+     - pdks
+   - From *Desktop/work/tools/openlane_working_dir/pdks*, list the files
+     - skywater-pdk : foundry files used for commercialized tools; not for open source tools
+     - open_pdks : scripts that converts foundry pdks to be compatible with open source tools
+     - sky130A : pdk that is made compatible with open source environment
+   - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A*, list the files
+     - libs.ref : contains technology process specific files
+     - libs.tech : contains files specific tools
+  - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech*, list the files
+  ![](images/25.png) 
+   
 
 
 
