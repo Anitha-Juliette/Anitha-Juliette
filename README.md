@@ -191,7 +191,7 @@ Advanced Physical Design - OpenLANE Workshop
     - To see how the reports were populated in the run folder
       */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/reports$ ls -ltr*
       */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/reports/synthesis/$ ls -ltr*
-      
+![](images/37.png)     
 **_8. Openlane Github link**
 * efabless openlane github : detailed study in this link
 
