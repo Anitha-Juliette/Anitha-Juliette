@@ -150,17 +150,17 @@ Advanced Physical Design - OpenLANE Workshop
     - bash-4.25 *ls  -ltr*
     - bash-4.25 *.flow/tcl -interactive*
     - % *package require openlane 0.9* 
-       - ![](images/27.png)
+      ![](images/27.png)
        - Exploring designs : From *Desktop/work/tools/openlane_working_dir/openlane/designs$ ls -ltr*, list the files
        - Among the various *designs* in openlane we choose *picorv32a*
        - From *Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ ls -ltr*, list the files
          - src : contains the verilog file of the RTL design chosen
          - config.tcl : bypasses the prviously set configurations in the openlane flow
-       - ![](images/28.png)
+         ![](images/28.png)
        - *Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ less config.tcl*
-       - ![](images/29.png)
+         ![](images/29.png)
    - *% prep -design picorv32a* : design preparation stage : merges LEF's
-       - ![](images/30.png) 
+      ![](images/30.png) 
    
 
 
