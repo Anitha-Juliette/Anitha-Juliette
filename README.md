@@ -123,12 +123,13 @@ Advanced Physical Design - OpenLANE Workshop
   - ls -ltr --> List files
   - ls -- help --> will list the linux commands
   - clear --> clear page
- * Exploring Openlane
+ * Exploring Openlane Working Directory
    - From *Desktop/work/tools/*, list the files
      - All tool directories such as openlane working dir, magic, skywater etc.. will be listed
    - From *Desktop/work/tools/openlane_working_dir*, list the files
      - openlane
      - pdks
+  * Exploring *pdks*
    - From *Desktop/work/tools/openlane_working_dir/pdks*, list the files
      - skywater-pdk : foundry files used for commercialized tools; not for open source tools
      - open_pdks : scripts that converts foundry pdks to be compatible with open source tools
@@ -144,6 +145,14 @@ Advanced Physical Design - OpenLANE Workshop
     - lib : timing information(PVT corners)
     - much more..
   ![](images/26.png)
+  * Exploring *openlane*
+    - From *Desktop/work/tools/openlane_working_dir/openlane*, *docker run* and then list files
+    - bash-4.25 *ls  -ltr*
+    - bash-4.25 *.flow/tcl -interactive*
+    - % *package require openlane 0.9* 
+       - ![](images/27.png)
+       - Exploring designs : From *Desktop/work/tools/openlane_working_dir/openlane/designs*, list the files
+       - Among the various *designs* in openlane we choose *picorv32a*
    
 
 
