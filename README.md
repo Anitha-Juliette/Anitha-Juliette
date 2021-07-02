@@ -137,7 +137,13 @@ Advanced Physical Design - OpenLANE Workshop
      - libs.ref : contains technology process specific files
      - libs.tech : contains files specific tools
   - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech*, list the files
-  ![](images/25.png) 
+  - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.ref*, list the files
+  ![](images/25.png)
+  - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.ref/sky130_fd_sc_hd*, list the files; fd--> foundry sc--> standard cell hd --> variant of pdk *high density*
+    - techlef : technolgy layer information
+    - lib : timing information(PVT corners)
+    - much more..
+  ![](images/26.png)
    
 
 
