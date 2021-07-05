@@ -18,6 +18,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[4.4 Static Timing Analysis(STA)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#43-static-timing-analysissta)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.5 Clock Tree Synthesis(CTS)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#44-clock-tree-synthesiscts)  
 &nbsp;[5. DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#day-5---power-distribution-network-routing-and-gdsii)  
+&nbsp;[6. ACKNOWLEDGEMENT](  
 
 ### **DAY 1 - INCEPTION OF OPENSOURCE EDA**
 #### 1.1-Talk-with-computers
@@ -784,3 +785,5 @@ report_wns
   * To generate GDSII file
   <pre><code>**% run_magic**
   </code></pre>
+
+### 6. ACKNOWLEDGEMENT
