@@ -423,33 +423,37 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
   <p align="center">
   <img src="images/54.png" width="70%" height="70%")
   </p>
+  <p align="center">
+  <img src="images/55.png" width="70%" height="70%")
+  </p>
+
    
  * Modification of Spice file based on Model files  :
    - MOS models are identified in the .lib files as below
   <p align="center">
-  <img src="images/55.png" width="70%" height="70%")
+  <img src="images/56.png" width="70%" height="70%")
   </p>
   <p align="center">
-  <img src="images/56.png" width="70%" height="70%")
+  <img src="images/57.png" width="70%" height="70%")
   </p>
      
    - The modified Sky130_inv.spice file 
   <p align="center">
-  <img src="images/57.png" width="70%" height="70%")
+  <img src="images/58.png" width="70%" height="70%")
   </p>
  
  * Running on ngspice
   <pre><code>03:~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign$ ngspice sky130_inv.spice
   </code></pre>
   <p align="center">
-  <img src="images/58.png" width="70%" height="70%")
+  <img src="images/59.png" width="70%" height="70%")
   </p>
  
  * Obtaining the Transient response
    <pre><code>ngspice 1 -> plot Y vs time A ( plot Y as a function of time by sweeping A)
   </code></pre>
   <p align="center">
-  <img src="images/58.png" width="70%" height="70%")
+  <img src="images/60.png" width="70%" height="70%")
   </p>
  
  * Calculation of Delays
@@ -462,10 +466,10 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
     Cell rise delay = 2.17 – 2.15 = 0.02ns
    
   <p align="center">
-  <img src="images/59.png" width="70%" height="70%")
+  <img src="images/61.png" width="70%" height="70%")
   </p>
   <p align="center">
-  <img src="images/60.png" width="70%" height="70%")
+  <img src="images/62.png" width="70%" height="70%")
   </p>
 
    
