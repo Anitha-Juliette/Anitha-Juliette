@@ -15,7 +15,7 @@ Advanced Physical Design - OpenLANE Workshop
 &nbsp;&nbsp;&nbsp;&nbsp;[4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.4 Static Timing Analysis(STA)](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.5 Clock Tree Synthesis(CTS))](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
-
+&nbsp;[5. Day 5 - Power Distribution Network, Routing and GDSII](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_Characterization)  
 
 ### Day 1 - Inception of Opensource EDA
 #### 1.1 TALK WITH COMPUTERS
@@ -740,7 +740,14 @@ report_wns
 
 * Post-CTS Timing analysis is done to determine set up time and hold time parameters
  
-   
+ ### DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII
+ * Power Distribution Network(PDN)
+   - In usual ASIC flow, PDN is a part of Floorplanning
+   - In Openlane, PDN ie executed before routing
+   - Creation of Power Grid
+   - Equal distribution of power to all parts of the chip
+   - Hierarchially, starting from the Chip down to the Cell, Power is distributed in 3 steps
+     - Rings : Distribute power rails 
 
   
 
