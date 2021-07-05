@@ -1,6 +1,6 @@
 Advanced Physical Design - OpenLANE Workshop
 
-&nbsp;[1. Day 1 - Inception of Opensource EDA](https://github.com/Anitha-Juliette/Openlane###_Day_1-Inception_of_Opensource_EDA)  
+&nbsp;[1. Day 1 - Inception of Opensource EDA](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#Day_1-Inception_of_Opensource_EDA)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.1 Talk with Computers](https://github.com/Anitha-Juliette/Openlane#1.1_Talk_with_Computers)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane#1.2_Invoking_Openlane)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.3 Open Source Tools familiarization](https://github.com/Anitha-Juliette/Openlane#1.3_Open_Source_Tools_familiarization)  
@@ -17,7 +17,7 @@ Advanced Physical Design - OpenLANE Workshop
 &nbsp;&nbsp;&nbsp;&nbsp;[4.5 Clock Tree Synthesis(CTS))](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;[5. Day 5 - Power Distribution Network, Routing and GDSII](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_Characterization)  
 
-### Day 1 - Inception of Opensource EDA
+### DAY 1 - INCEPTION OF OPENSOURCE EDA
 #### 1.1 TALK WITH COMPUTERS
 **_Chip Overview_**
 Illustrates the chip inside a board with its peripherals. Core of the chip is Foundry IP's and Macros integrated on a Die inside a Package with I/O pins  
