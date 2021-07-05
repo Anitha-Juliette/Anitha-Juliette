@@ -9,7 +9,7 @@ Advanced Physical Design - OpenLANE Workshop
 &nbsp;&nbsp;&nbsp;&nbsp;[2.2 Placement](https://github.com/Anitha-Juliette/Openlane#2.2_Placement)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design and Characterization](https://github.com/Anitha-Juliette/Openlane#2.3_Characterization_of_Standard_Cell_Design)  
 &nbsp;[3. Day 3 - Standard Cell inverter Characterization](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_Characterization)  
-&nbsp;[4. Day 4 - Plugin Standard Cell Inverter on to the design in Openlane](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_C)  
+&nbsp;[4. Day 4 - Mixed Signal ASIC Flow(Plugin Standard Cell Inverter with digital design picorv32a in Openlane)](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_C)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.2 Inclusion of Standard Cell inverter into design](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
@@ -641,7 +641,62 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 <p align="center">
 <img src="images/88.png" width="70%" height="70%")
 </p>
+   
+#### 4.3 STATIC TIMING ANALYSIS(STA)
+* STA is a tool for analyzing the timing performance
+* STA provides Slew and Delay for every cell inside the design for varying values of fanout, capacitances etc..
+* STA reports the Total Negative Slack(TNS)(total path delay) and Worst Negative Slack(TWS)(Worst path delay)
+* Optimization of variables have to done in any of the following ways
+  - Review sysnthesis strategy
+  - Enable Cell buffering
+  - Manual replacement of cells using Open STA
+   
+* After the standard cell has been included within the design picorv32a and synthesis was run, a new RTL netlist picorv32a.synthesis.v is created
+<p align="center">
+<img src="images/89.png" width="70%" height="70%")
+</p>
 
+* In the Openlane root directory, create pre_sta_conf file, which lnks the new design with the Process Corner libraries along with the Design constraints file(my_base.sdc)
+<pre><code>set_cmd_units -time ns -capacitance pF -current mA -voltage V -resistance kOhm -distance um  
+read_liberty -max /home/anitha/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/sky130_fd_sc_hd__slow.lib  
+read_liberty -max /home/anitha/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/sky130_fd_sc_hd__fast.lib  
+read_verilog /home/anitha/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/03-07_18-10/results/synthesis/picorv32a.synthesis.v  
+link design picorv32a  
+read_sdc /home/anitha/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/my_base.sdc  
+report_checks -path_delay min_max -fields {slew trans net cap input_pin}  
+report_tns  
+report_wns
+</code></pre>
+<p align="center">
+<img src="images/90.png" width="70%" height="70%")
+</p>
+
+* Environmental variables used in STA have to be declared in mybase_sdc since it is outside openlane
+<p align="center">
+<img src="images/91.png" width="70%" height="70%")
+</p>
+<p align="center">
+<img src="images/92.png" width="70%" height="70%")
+</p>
+<p align="center">
+<img src="images/93.png" width="70%" height="70%")
+</p>
+
+* Perform Pre-STA from openlane directory
+<pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane$ sta pre_sta_conf  
+</code></pre>
+<p align="center">
+<img src="images/94.png" width="70%" height="70%")
+</p>
+
+* STA reports the Slack with timing parameters below
+<p align="center">
+<img src="images/95.png" width="70%" height="70%")
+</p>
+   
+ 
+
+   
 
    
 
