@@ -1,6 +1,6 @@
 Advanced Physical Design - OpenLANE Workshop
 
-&nbsp;[1. Day 1 - Inception of Opensource EDA](https:https://github.com/Anitha-Juliette/Openlane/README.md#Day_1-Inception_of_Opensource_EDA)  
+&nbsp;[1. Day 1 - Inception of Opensource EDA](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#Day_1-Inception_of_Opensource_EDA)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.1 Talk with Computers](https://github.com/Anitha-Juliette/Openlane#1.1_Talk_with_Computers)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane#1.2_Invoking_Openlane)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.3 Open Source Tools familiarization](https://github.com/Anitha-Juliette/Openlane#1.3_Open_Source_Tools_familiarization)  
