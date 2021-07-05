@@ -40,7 +40,7 @@ Illustrates the chip inside a board with its peripherals. Core of the chip is Fo
 **_Software Applications to Hardware_**
 * Abstract interface
 <p align="center">
-<img src="images/7.png" width="50%" height="50%")
+<img src="images/7.png" width="100%" height="100%")
 </p>
 
 #### **1.2 SoC Design and Openlane**
@@ -56,7 +56,7 @@ Illustrates the chip inside a board with its peripherals. Core of the chip is Fo
    - Process Design rules : DRC, LVS, PEX
    - Device Models
    - Digital Standard Libraries
-   - I/O libraries
+   - I/O libraries  
  **_ASIC Flow Objective : RTL to GDSII (Automated PnR and/or Physical Implementation)_**
  * Simplified RTL2GDSII design flow
 <p align="center">
@@ -203,7 +203,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    <pre><code>% prep -design picorv32a
    </code></pre>
 <p align="center">
-<img src="images/30.png" width="40%" height="40%")
+<img src="images/30.png" width="100%" height="100%")
 </p>
    
    - After the design preparation stage, *runs* directory is created
@@ -327,16 +327,16 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
      - invoked through magic by passing the files sky130A.tech, merged.lef and picorv32a.floorplan.def 
    <pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_15-58/results/floorplan$ magic -T /Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def picorv32a.floorplan.def &
    </code></pre>  
-   sky130A.tech : Technology file invoked from Magic  
-   merged.lef   : Created from Preperation stage  
-   picorv32a.floorplan.def: Created from Floorplan stage  
-   -T : technology  
-   & : prompt to return back after Magic invocation
+      - sky130A.tech : Technology file invoked from Magic  
+      - merged.lef   : Created from Preperation stage  
+      - picorv32a.floorplan.def: Created from Floorplan stage  
+      - -T : technology  
+      - & : prompt to return back after Magic invocation
    <p align="center">
    <img src="images/43.png" width="100%" height="100%")
    </p>
    
-    - By typing What in tkcon window, the selected mask layerin the cell can be viewed
+    - By typing *_What-* in tkcon window, the selected mask layerin the cell can be viewed
    <p align="center">
    <img src="images/44.png" width="100%" height="100%")
    </p>
@@ -418,7 +418,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    
    - In Tkcon,
   <pre><code>Ext2spice cthresh 0 rthresh 0  
-             Ext2spice
+  Ext2spice
   </code></pre>
     - Sky130_inv.spice is created from Sky130_inv.ext
   
@@ -489,10 +489,10 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
  <pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd$ less tracks.info
  </code></pre>
  <p align="center">
- <img src="images/63.png" width="70%" height="70%")
+ <img src="images/63.png" width="150%" height="150%")
  </p>
  <p align="center">
- <img src="images/64.png" width="70%" height="70%")
+ <img src="images/64.png" width="5%" height="5%")
  </p>
     
  * In Tkcon 
@@ -509,6 +509,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
  <p align="center">
  <img src="images/67.png" width="70%" height="70%")
  </p>
+    
  * Save the matched Grid-Track file in Tkcon
  <pre><code>% save sky130_vsdinv.mag
  </code></pre>
@@ -586,28 +587,28 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 <pre><code>% init_floorplan
 </code></pre>
 <p align="center">
-<img src="images/79.png" width="70%" height="70%")
+<img src="images/79.png" width="150%" height="150%")
 </p>
    
 * I/O Placement
 <pre><code>% place_io
 </code></pre>
 <p align="center">
-<img src="images/80.png" width="70%" height="70%")
+<img src="images/80.png" width="150%" height="150%")
 </p>
    
 * Global Placement
 <pre><code>% global_placement_or	
 </code></pre>
 <p align="center">
-<img src="images/81.png" width="70%" height="70%")
+<img src="images/81.png" width="100%" height="100%")
 </p>
 
 * Detailed Placement
 <pre><code>% detailed_placement
 </code></pre>
 <p align="center">
-<img src="images/82.png" width="70%" height="70%")
+<img src="images/82.png" width="100%" height="100%")
 </p>
 
 * Placing Decoupling Capacitors
@@ -621,7 +622,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 <pre><code>% detailed_placement
 </code></pre>
 <p align="center">
-<img src="images/84.png" width="70%" height="70%")
+<img src="images/84.png" width="100%" height="0%")
 </p>
 
 * Include the picorv32a.placement.def file into magic 
