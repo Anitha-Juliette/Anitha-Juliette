@@ -1,4 +1,3 @@
-Advanced Physical Design - OpenLANE Workshop
 
 [1. DAY 1 - INCEPTION OF OPENSOURCE EDA](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#DAY-1---INCEPTION-OF-OPENSOURCE-EDA)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.1 Talk with computers](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#day-1---inception-of-opensource-eda)  
