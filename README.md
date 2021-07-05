@@ -41,7 +41,7 @@ Illustrates the chip inside a board with its peripherals. Core of the chip is Fo
 <img src="images/7.png" width="50%" height="50%")
 </p>
 
-#### **SoC Design and Openlane**
+#### **1.2 SoC Design and Openlane**
 **_Components of Open Source digital ASIC design_**
 * Components
    - RTL IP's
@@ -126,7 +126,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
   * DRC and Spice extraction from Layout : Magic 
   * LVS : Magic and Netgen  
 
-#### **Open Source Tools familiarization**
+#### **1.3 Open Source Tools familiarization**
     
 **_Openlane Directory structure in detail_**
 * Basic Linux commands
@@ -268,7 +268,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    https://github.com/The-OpenROAD-Project/OpenLane
    
 ### DAY 2 - CHIP FLOORPLANNING, PLACEMENT, STANDARD CELL DESIGN AND CHARACTERIZATION
-#### 2.1 Floorplanning
+#### **2.1 Floorplanning**
    * Setting Die area
    * Setting Core area(Macro and row cells)
    * Specification of Aspect ratio
@@ -339,7 +339,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    <img src="images/44.png" width="100%" height="100%")
    </p>
       
-#### 2.2 Placement
+#### **2.2 Placement**
       
    * Binds netlist with physical cells
    * Library has various flavours of cells
@@ -480,7 +480,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
   </p>
  
  ### DAY 4 - PLUGIN STANDARD CELL INVERTER ON TO THE DESIGN IN OPENLANE
- #### 4.1 Spice Extraction of Standard Cell inverter through Magic
+ #### **4.1 Spice Extraction of Standard Cell inverter through Magic**
  * Steps to convert Grid info(magic) into Trackinfo(pdk in openlane)
      - Only with tracks, PnR can route
      - Converge grid with track value
@@ -531,7 +531,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 </p>
 
    
-#### 4.2 Inclusion of Standard Cell inverter into design
+#### **4.2 Inclusion of Standard Cell inverter into design**
 * Insertion of LEF file into the Source files of Design picorv32a
 <pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign$ cp sky130_vsdinv.lef /home/anitha/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
 </code></pre>
@@ -571,7 +571,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 <img src="images/77.png" width="70%" height="70%")
 </p>
     
-#### 4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a
+#### **4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a**
 * Synthesis
   - Run Synthesis on the modified design file 
 <pre><code>% run_synthesis
@@ -642,7 +642,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 <img src="images/88.png" width="70%" height="70%")
 </p>
    
-#### 4.3 Static Timing Analysis(STA)
+#### **4.3 Static Timing Analysis(STA)**
 * STA is a tool for analyzing the timing performance
 * STA provides Slew and Delay for every cell inside the design for varying values of fanout, capacitances etc..
 * STA reports the Total Negative Slack(TNS)(total path delay) and Worst Negative Slack(TWS)(Worst path delay)
@@ -694,7 +694,7 @@ report_wns
 <img src="images/95.png" width="70%" height="70%")
 </p>
 
-#### 4.4 Clock Tree Synthesis(CTS)
+#### **4.4 Clock Tree Synthesis(CTS)**
 * CTS is done prior to routing in Openlane. 
 * CTS adds Clock buffers the Clock Distribution Network and hence the RTL netlist of the design will be modified after CTS
 * Clock skew and Clock jitter are major concerns in the design
@@ -740,7 +740,7 @@ report_wns
 
 * Post-CTS Timing analysis is done to determine set up time and hold time parameters
  
- ### DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII
+ ### **DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII**
  * Power Distribution Network(PDN)
    - In usual ASIC flow, PDN is a part of Floorplanning
    - In Openlane, PDN ie executed before routing
