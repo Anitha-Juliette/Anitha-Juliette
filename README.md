@@ -2,7 +2,7 @@ Advanced Physical Design - OpenLANE Workshop
 
 &nbsp;[1. DAY 1 - INCEPTION OF OPENSOURCE EDA](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#DAY-1---INCEPTION-OF-OPENSOURCE-EDA)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.1 Talk with computers](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#1.1-Talk-with-computers)  
-&nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#1.2_SoC-Design-and-Openlane)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#1.2-SoC-Design-and-Openlane)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.3 Open Source Tools familiarization](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#1.3_Open_Source_Tools_familiarization)  
 &nbsp;[2. DAY 2 - CHIP FLOORPLANNING, PLACEMENT , STANDARD CELL DESIGN AND CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#Day-2---CHIP-FLOORPLANNING,-PLACEMENT,-STANDARD-CELL-DESIGN-AND-CHARACTERIZATION)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.1 Floorplanning](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#2.1_Floorplanning)  
