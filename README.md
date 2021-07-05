@@ -221,25 +221,30 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 <p align="center">
 <img src="images/34.png" width="30%" height="30%")
 </p>
+   
   - To see how the results were populated in the run folder
  <pre><code>/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results/synthesis/$ ls -ltr
  </code></pre>
+ 
     -Viewing this at this stage shows the synthesised netlist picorv32a.synthesis.v
 <p align="center">
 <img src="images/35.png" width="60%" height="60%")
 </p>
+   
     -View synthesised netlist : abc has completed all mappings
  <pre><code>/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results/synthesis$ less picorv32a.synthesis.v
  </code></pre>  
 <p align="center">
-<img src="images/36.png" width="100%" height="100%")
+<img src="images/36.png" width="40%" height="40%")
 </p>
+   
     - To see how the reports were populated in the run folder
  <pre><code>/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/reports/synthesis/$ ls -ltr
  </code></pre>    
 <p align="center">
-<img src="images/37.png" width="60%" height="60%")
+<img src="images/37.png" width="100%" height="100%")
 </p>
+   
 **_Openlane Github link_**
 * efabless openlane github : detailed study in this link
 ### Day 2 - Floor planning
