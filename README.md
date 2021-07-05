@@ -492,7 +492,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
  <img src="images/63.png" width="150%" height="150%")
  </p>
  <p align="center">
- <img src="images/64.png" width="5%" height="5%")
+ <img src="images/64.png" width="50%" height="50%")
  </p>
     
  * In Tkcon 
