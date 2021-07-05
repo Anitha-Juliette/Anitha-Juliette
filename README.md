@@ -2,20 +2,20 @@ Advanced Physical Design - OpenLANE Workshop
 
 [1. DAY 1 - INCEPTION OF OPENSOURCE EDA](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#DAY-1---INCEPTION-OF-OPENSOURCE-EDA)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.1 Talk with computers](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#day-1---inception-of-opensource-eda)  
-&nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#1.2-SoC-Design-and-Openlane)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#12-soc-design-and-openlane)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.3 Open Source Tools familiarization](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#1.3_Open_Source_Tools_familiarization)  
-&nbsp;[2. DAY 2 - CHIP FLOORPLANNING, PLACEMENT , STANDARD CELL DESIGN AND CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#2.-DAY-2---CHIP-FLOORPLANNING,-PLACEMENT,-STANDARD-CELL-DESIGN-AND-CHARACTERIZATION)  
-&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Floorplanning](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#2.1_Floorplanning)  
-&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Placement](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#2.2_Placement)  
-&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design and Characterization](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#2.3-Standard-Cell-Design-and-Characterization)  
-&nbsp;[3. DAY 3 - STANDARD CELL INVERTER CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#3.-DAY-3---STANDARD-CELL-INVERTER-CHARACTERIZATION)  
-&nbsp;[4. DAY 4 - MIXED SIGNAL ASIC FLOW(Plugin Standard Cell Inverter with digital design picorv32a in Openlane)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.-DAY-4---MIXED-SIGNAL-ASIC-FLOW(Plugin-Standard-Cell-Inverter-with-digital-design-picorv32a-in-Openlane))  
-&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.1-Spice-Extraction-of-Standard-Cell-inverter-through-Magic)  
+&nbsp;[2. DAY 2 - CHIP FLOORPLANNING, PLACEMENT , STANDARD CELL DESIGN AND CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#day-2---chip-floorplanning-placement-standard-cell-design-and-characterization)  
+&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Floorplanning](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#21-floorplanning)  
+&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Placement](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#22-placement)  
+&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design and Characterization](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#23-standard-cell-design-and-characterization)  
+&nbsp;[3. DAY 3 - STANDARD CELL INVERTER CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#day-3---standard-cell-inverter-characterization)  
+&nbsp;[4. DAY 4 - MIXED SIGNAL ASIC FLOW(Plugin Standard Cell Inverter with digital design picorv32a in Openlane)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#day-4---plugin-standard-cell-inverter-on-to-the-design-in-openlane)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic]https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#42-inclusion-of-standard-cell-inverter-into-design)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.2 Inclusion of Standard Cell inverter into design](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.2-Inclusion-of-Standard-Cell-inverter-into-design)  
-&nbsp;&nbsp;&nbsp;&nbsp;[4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.3-Synthesis,-Floorplanning-and-Placement-of-the-modified-design-picorv32a)  
-&nbsp;&nbsp;&nbsp;&nbsp;[4.4 Static Timing Analysis(STA)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.4-Static-Timing-Analysis(STA))  
-&nbsp;&nbsp;&nbsp;&nbsp;[4.5 Clock Tree Synthesis(CTS)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.5-Clock-Tree-Synthesis(CTS))  
-&nbsp;[5. DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#5.-DAY-5---POWER-DISTRIBUTION-NETWORK,-ROUTING-AND-GDSII)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#43-synthesis-floorplanning-and-placement-of-the-modified-design-picorv32a)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.4 Static Timing Analysis(STA)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#43-static-timing-analysissta)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.5 Clock Tree Synthesis(CTS)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#44-clock-tree-synthesiscts)  
+&nbsp;[5. DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#day-5---power-distribution-network-routing-and-gdsii)  
 
 ### **DAY 1 - INCEPTION OF OPENSOURCE EDA**
 #### 1.1-Talk-with-computers
@@ -741,13 +741,52 @@ report_wns
 * Post-CTS Timing analysis is done to determine set up time and hold time parameters
  
  ### **DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII**
- * Power Distribution Network(PDN)
+ * **Power Distribution Network(PDN)**
    - In usual ASIC flow, PDN is a part of Floorplanning
    - In Openlane, PDN ie executed before routing
    - Creation of Power Grid
    - Equal distribution of power to all parts of the chip
    - Hierarchially, starting from the Chip down to the Cell, Power is distributed in 3 steps
-     - Rings : Distribute power rails 
+     - Rings : Distribute power  VDD  and VSS around the chip
+     - Stripes : Distribute power  VDD  and VSS across the chip
+     - Rails   : Distribute power  VDD  and VSS to the cells inside the chip
+<p align="center">
+<img src="images/101.png" width="70%" height="70%")
+</p>
+   
+   <pre><code>**% run_cts**
+   </code></pre>
+   - 19-pdn.def DEF file created in floorplan of latest runs directory
+<p align="center">
+<img src="images/102.png" width="70%" height="70%")
+</p>
+
+  * **Routing**
+    - Interconnections are performed 
+      - Within standard cells
+      - Pins of the macro cells with the rest of the chip
+      - I/O pins
+    - Metals and vias are used to establish interconnections
+    - Routing 
+      - Global Routing
+      - Detailed Routing
+   <pre><code>**% run_routing**
+   </code></pre>
+   - 19-pdn.def DEF file created in floorplan of latest runs directory
+<p align="center">
+<img src="images/103.png" width="70%" height="70%")
+</p>
+   
+  * **SPEF extraction** is performed to obtain picorv32a.spef
+  * To generate GDSII file
+  <pre><code>**% run_magic**
+  </code></pre>
+ 
+    
+  
+   
+   
+
 
   
 
