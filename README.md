@@ -1,5 +1,5 @@
 <p align="center">
-<img src="images/workshop.png" width="50%" height="50%")
+<img src="images/workshop.png" width="100%" height="100%")
 </p>
 
 &nbsp;[1. DAY 1 - INCEPTION OF OPENSOURCE EDA](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#DAY-1---INCEPTION-OF-OPENSOURCE-EDA)  
