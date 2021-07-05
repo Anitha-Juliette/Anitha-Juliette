@@ -4,6 +4,13 @@ Advanced Physical Design - OpenLANE Workshop
 &nbsp;&nbsp;&nbsp;&nbsp;[1.1 Talk with Computers](https://github.com/Anitha-Juliette/Openlane#1.1_Talk_with_Computers)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane#1.2_Invoking_Openlane)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.3 Open Source Tools familiarization](https://github.com/Anitha-Juliette/Openlane#1.3_Open_Source_Tools_familiarization)  
+&nbsp;[2. Day 2 - Chip Floorplanning, Placement, Standard cell Design and Charcterization](https://github.com/Anitha-Juliette/Openlane#2.Day_2_Chip_Floorplanning,_Placement_and_Standard cell Design)  
+&nbsp;&nbsp;&nbsp;&nbsp;[2.1 Floorplanning](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
+&nbsp;&nbsp;&nbsp;&nbsp;[2.2 Placement](https://github.com/Anitha-Juliette/Openlane#2.2_Placement)  
+&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design](https://github.com/Anitha-Juliette/Openlane#2.3_Standard_Cell_Design) 
+&nbsp;&nbsp;&nbsp;&nbsp;[2.4 Characterization of Standard Cell Design](https://github.com/Anitha-Juliette/Openlane#2.4_Characterization_of_Standard_Cell_Design) 
+
+
 
 
 ### Day 1 - Inception of Opensource EDA
@@ -249,5 +256,24 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    
 **_Openlane Github link_**
 * efabless openlane github : detailed study in this link
-### Day 2 - Floor planning
+   https://github.com/The-OpenROAD-Project/OpenLane
+   
+### Day 2 - CHIP FLOORPLANNING, PLACEMENT , STANDARD CELL DESIGN AND CHARACTERIZATION
+#### 2.1 FLOORPLANNING
+   * Setting Die area
+   * Setting Core area(Macro and row cells)
+   * Specification of Aspect ratio
+   * Optimizaation of Utilization factor
+   * Places Preplaced cells(Macros) I/O 
+   * Places decoupling capacitors
+   * Power distribution Networks(In Openlane flow, PDN is executed before Routing)
+   * Placement of pin locations
+**_Viewing files befor Floorplan run_**
+   <pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/configuration$ ls –ltr
+   </code></pre>
+   <p align="center">
+   <img src="images/38.png" width="100%" height="100%")
+   </p>
+
+   
 
