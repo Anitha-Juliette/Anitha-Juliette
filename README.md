@@ -317,7 +317,8 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    <img src="images/42.png" width="40%" height="40%")
    </p>
 
-   * Actual layout after floorplan : invoked through magic by passing the files sky130A.tech, merged.lef and picorv32a.floorplan.def 
+   * Actual layout after floorplan : 
+     - invoked through magic by passing the files sky130A.tech, merged.lef and picorv32a.floorplan.def 
    <pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_15-58/results/floorplan$ magic -T /Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def picorv32a.floorplan.def &
    </code></pre>
    -T : technology
@@ -325,6 +326,12 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    <p align="center">
    <img src="images/43.png" width="100%" height="100%")
    </p>
+   
+    - By typing What in tkcon window, the selected mask layerin the cell can be viewed
+   <p align="center">
+   <img src="images/44.png" width="100%" height="100%")
+   </p>
+
    
    
     
