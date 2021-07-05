@@ -12,7 +12,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design and Characterization](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#23-standard-cell-design-and-characterization)  
 &nbsp;[3. DAY 3 - STANDARD CELL INVERTER CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#day-3---standard-cell-inverter-characterization)  
 &nbsp;[4. DAY 4 - MIXED SIGNAL ASIC FLOW(Plugin Standard Cell Inverter with digital design picorv32a in Openlane)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#day-4---plugin-standard-cell-inverter-on-to-the-design-in-openlane)  
-&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic]https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#42-inclusion-of-standard-cell-inverter-into-design)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#42-inclusion-of-standard-cell-inverter-into-design)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.2 Inclusion of Standard Cell inverter into design](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.2-Inclusion-of-Standard-Cell-inverter-into-design)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#43-synthesis-floorplanning-and-placement-of-the-modified-design-picorv32a)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.4 Static Timing Analysis(STA)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#43-static-timing-analysissta)  
