@@ -3,6 +3,7 @@ Advanced Physical Design - OpenLANE Workshop
 &nbsp;[1. Day 1 - Inception of Opensource EDA](https://github.com/Anitha-Juliette/Openlane#1._Day1-Inception_of_Opensource_EDA)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.1 Talk with Computers](https://github.com/Anitha-Juliette/Openlane#1.1_Talk_with_Computers)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane#1.2_Invoking_Openlane)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.3 Open Source Tools familiarization](https://github.com/Anitha-Juliette/Openlane#1.3_Open_Source_Tools_familiarization)  
 
 
 ### Day 1 - Inception of Opensource EDA
@@ -45,7 +46,7 @@ Illustrates the chip inside a board with its peripherals. Core of the chip is Fo
    - I/O libraries
  **_ASIC Flow Objective : RTL to GDSII (Automated PnR and/or Physical Implementation)_**
  * Simplified RTL2GDSII design flow
- <p align="center">
+<p align="center">
 <img src="images/11.png" width="50%" height="50%")
 </p>
 
@@ -83,7 +84,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
  * Openlane Design examples : 43 design examples with best configurations
     
  **_Openlane detailed ASIC Flow_**
- <p align="center">
+<p align="center">
 <img src="images/21.png" width="80%" height="80%")
 </p>
 
@@ -112,21 +113,23 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
   * Physiscal Signoff 
   * DRC & LVS
   * DRC and Spice extraction from Layout : Magic 
-  * LVS : Magic and Netgen
-**_Openlane Directory structure in detail**
-* Empty Linux terminal -> own directory
+  * LVS : Magic and Netgen  
+
+#### **1.3 OPEN SOURCE TOOLS FAMILIARIZATION**
+    
+**_Openlane Directory structure in detail_**
 * Basic Linux commands
   - cd work/tools/ --> Change directory
   - ls -ltr --> List files
   - ls -- help --> will list the linux commands
   - clear --> clear page
- * Exploring Openlane Working Directory
+* Exploring Openlane Working Directory
    - From *Desktop/work/tools$ ls -ltr*, list the files
      - All tool directories such as openlane working dir, magic, skywater etc.. will be listed
    - From *Desktop/work/tools/openlane_working_dir$ ls -ltr*, list the files
      - openlane
-     - pdks
-  * Exploring *pdks*
+     - pdks 
+ * Exploring *pdks*
    - From *Desktop/work/tools/openlane_working_dir/pdks$ ls -ltr*, list the files
      - skywater-pdk : foundry files used for commercialized tools; not for open source tools
      - open_pdks : scripts that converts foundry pdks to be compatible with open source tools
@@ -134,61 +137,108 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A$ ls -ltr*, list the files
      - libs.ref : contains technology process specific files
      - libs.tech : contains files specific tools
-  - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech$ ls -ltr*, list the files
-  - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.ref*, list the files
-  ![](images/25.png)
+     - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech$ ls -ltr*, list the files
+     - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.ref*, list the files
+<p align="center">
+<img src="images/25.png" width="60%" height="60%")
+</p>
+   
   - From *Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.ref/sky130_fd_sc_hd$ ls -lrt*, list the files; fd--> foundry sc--> standard cell hd --> variant of pdk *high density*
     - techlef : technolgy layer information
     - lib : timing information(PVT corners)
-    - much more..
-  ![](images/26.png)
-  * Exploring *openlane*
-    - From *Desktop/work/tools/openlane_working_dir/openlane$docker*, run docker and then list files
-    - bash-4.25 *ls  -ltr*
-    - bash-4.25 *./flow.tcl -interactive*
-    - % *package require openlane 0.9* 
-      ![](images/27.png)
+<p align="center">
+<img src="images/26.png" width="60%" height="60%")
+</p>
+   
+ * Exploring *openlane*
+    - From *Desktop/work/tools/openlane_working_dir/openlane$docker*, run docker 
+   <pre><code>./flow.tcl -interactive
+   </code></pre>
+   <pre><code>package require openlane 0.9
+   </code></pre>     
+<p align="center">
+<img src="images/27.png" width="60%" height="60%")
+</p>
+   
        - Exploring designs : From *Desktop/work/tools/openlane_working_dir/openlane/designs$ ls -ltr*, list the files
-       - Among the various *designs* in openlane we choose *picorv32a*
-       - From *Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ ls -ltr*, list the files
+       - Among the various *designs* in openlane we choose *picorv32a* 
+         <pre><code>Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ ls -ltr
+         </code></pre>
          - src : contains the verilog file of the RTL design chosen
          - config.tcl : bypasses the prviously set configurations in the openlane flow
-         ![](images/28.png)
-       - *Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ less config.tcl*
-         ![](images/29.png)
+<p align="center">
+<img src="images/28.png" width="100%" height="100%")
+</p>
+   
+          <pre><code>Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ less config.tcl
+          </code></pre>
+          
+<p align="center">
+<img src="images/29.png" width="60%" height="60%")
+</p>
+
  * Design preparation step
-   - *% prep -design picorv32a* : design preparation stage : merges LEF's
-   ![](images/30.png) 
-   - AFter the design prepartion stage, execute *Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ less config.tcl* ; *runs* directory is created
-    - *anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs$ ls -ltr* creates 4 folders.
-    - */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_10-07$ ls -ltr* Open the folder that contains date. This creates the directories required for the openlane
+   - merges LEF's
+   <pre><code>% prep -design picorv32a
+   </code></pre>
+<p align="center">
+<img src="images/30.png" width="60%" height="60%")
+</p>
+   
+   - After the design preparation stage, *runs* directory is created
+  <pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs$ ls -ltr*
+  </code></pre> 
+  - Open the folder that contains date. This creates the directories required for the openlane
+  <pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs$ ls -ltr*
+  </code></pre> 
        - cmds.logs
        - tmp
        - results
        - logs
        - reports
        - config.tcl
-       -
-  ![](images/31.png)
-  ![](images/32.png)
+
+<p align="center">
+<img src="images/31.png" width="60%" height="60%")
+</p>
+
+<p align="center">
+<img src="images/32.png" width="60%" height="60%")
+</p>
   
-  * Review files after design preparation step and run synthesis
-   - *run_synthesis* : Obtain Static timing analysis and Chip area 
- ![](images/33.png) 
+ * Review files after design preparation step and run synthesis
+   <pre><code>run_synthesis
+   </code></pre>
+   - Obtain Static timing analysis and Chip area 
+<p align="center">
+<img src="images/33.png" width="60%" height="60%")
+</p>
+
 **_Steps to characterize synthesis results**
 * Objectives
   - Flop ratio : (Number of D flip flops/ Total number of cells)*100 = 1613/14876 = 9.06%
-  ![](images/34.png)
+<p align="center">
+<img src="images/34.png" width="60%" height="60%")
+</p>
   - To see how the results were populated in the run folder
-    */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results$ ls -ltr*
-    */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results/synthesis/$ ls -ltr* : Viewing this at this stage shows the synthesised netlist picorv32a.synthesis.v
-![](images/35.png)
-    - View synthesised netlist : */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results/synthesis$ less picorv32a.synthesis.v* : abc has completed all mappings
-![](images/36.png)
+ <pre><code>/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results/synthesis/$ ls -ltr
+ </code></pre>
+    -Viewing this at this stage shows the synthesised netlist picorv32a.synthesis.v
+<p align="center">
+<img src="images/35.png" width="60%" height="60%")
+</p>
+    -View synthesised netlist : abc has completed all mappings
+ <pre><code>/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results/synthesis$ less picorv32a.synthesis.v
+ </code></pre>  
+<p align="center">
+<img src="images/36.png" width="60%" height="60%")
+</p>
     - To see how the reports were populated in the run folder
-      */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/reports$ ls -ltr*
-      */Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/reports/synthesis/$ ls -ltr*
-![](images/37.png)     
+ <pre><code>/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/reports/synthesis/$ ls -ltr
+ </code></pre>    
+<p align="center">
+<img src="images/37.png" width="60%" height="60%")
+</p>
 **_Openlane Github link_**
 * efabless openlane github : detailed study in this link
 ### Day 2 - Floor planning
