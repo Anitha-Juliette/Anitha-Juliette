@@ -7,8 +7,7 @@ Advanced Physical Design - OpenLANE Workshop
 &nbsp;[2. Day 2 - Chip Floorplanning, Placement, Standard cell Design and Charcterization](https://github.com/Anitha-Juliette/Openlane#2.Day_2_Chip_Floorplanning,_Placement_and_Standard_cell_Design)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.1 Floorplanning](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.2 Placement](https://github.com/Anitha-Juliette/Openlane#2.2_Placement)  
-&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design](https://github.com/Anitha-Juliette/Openlane#2.3_Standard_Cell_Design)   
-&nbsp;&nbsp;&nbsp;&nbsp;[2.4 Characterization of Standard Cell Design](https://github.com/Anitha-Juliette/Openlane#2.4_Characterization_of_Standard_Cell_Design) 
+&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design and Characterization](https://github.com/Anitha-Juliette/Openlane#2.4_Characterization_of_Standard_Cell_Design) 
 
 
 
@@ -370,8 +369,115 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    <p align="center">
    <img src="images/47.png" width="70%" height="70%")
    </p>
+      
+#### **2.3 STANDARD CELL DESIGN AND CHARACTERIZATION**
+* Standard cell design involves the creation of Layout(GDSII) of  cells such as inverter, buffer, gates, which is devloped into IP core design  
+* Circuit and Layout design is done using Magic and Guna taking PDKs, DRC and LVS rules, SPICE models, library & user-defined specs as inputs  
+* Outputs are CDL (Circuit Description Language), GDSII, LEF(Library Exchange Format), Spice extracted netlist, timing, noise, power libs.  
+* In this workshop, a Standard cell inverter layout from Github is imported into Openlane environment to characterize the cell(Timing, Power and Noise analysis  
+* Clone the standard cell inverter layout from github into openlane environment:
+   <pre><code>
+   anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane$ git clone https://github.com/nickson-jose/vsdstdcelldesign.git
+   </code></pre>
+   <p align="center">
+   <img src="images/48.png" width="70%" height="70%")
+   </p>
+   <p align="center">
+   <img src="images/49.png" width="70%" height="70%")
+   </p>
+      
+* Copy sky130A.tech to vsdstdcelldesign and invoke sky130_inv.mag the layout through Magic
+  <p align="center">
+  <img src="images/50.png" width="70%" height="70%")
+  </p>
+     
+  <pre><code>03:~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign$ magic -T sky130A.tech sky130_inv.mag &
+  </code></pre>
+  <p align="center">
+  <img src="images/51.png" width="70%" height="70%")
+  </p>
+   
+ * Extraction of Spice Netlist :
+   - In tkcon2.3 , in vsdstdcelldesign directory  
+   <pre><code>Extract all
+  </code></pre>
+   - Sky130_inv.ext is created
+  
+  <p align="center">
+  <img src="images/52.png" width="70%" height="70%")
+  </p>
+   
+   - In Tkcon,
+  <pre><code>Ext2spice cthresh 0 rthresh 0  
+   Ext2spice
+  </code></pre>
+     - Sky130_inv.spice is created from Sky130_inv.ext
+  
+  <p align="center">
+  <img src="images/53.png" width="70%" height="70%")
+  </p>
+   
+   - View the Spice file with the command
+  <pre><code>vim sky13_inv.ext 
+  </code></pre>
+  <p align="center">
+  <img src="images/54.png" width="70%" height="70%")
+  </p>
+   
+ * Modification of Spice file based on Model files  :
+   - MOS models are identified in the .lib files as below
+  <p align="center">
+  <img src="images/55.png" width="70%" height="70%")
+  </p>
+  <p align="center">
+  <img src="images/56.png" width="70%" height="70%")
+  </p>
+     
+   - The modified Sky130_inv.spice file 
+  <p align="center">
+  <img src="images/57.png" width="70%" height="70%")
+  </p>
+ 
+ * Running on ngspice
+  <pre><code>03:~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign$ ngspice sky130_inv.spice
+  </code></pre>
+  <p align="center">
+  <img src="images/58.png" width="70%" height="70%")
+  </p>
+ 
+ * Obtaining the Transient response
+   <pre><code>ngspice 1 -> plot Y vs time A ( plot Y as a function of time by sweeping A)
+  </code></pre>
+  <p align="center">
+  <img src="images/58.png" width="70%" height="70%")
+  </p>
+ 
+ * Calculation of Delays
+   - Rise time(o/p 20% to 80%)
+   - Fall transit(o/p 80% to 20%)
+   - Cell rise delay or Rise Prog delay( 50% of input fall to 50% of output rise)
+   - Cell fall delay or fall Prog delay( 50% of input rise to 50% of output fall)
+   - As an example. Calculating cell rise delay: 
+    50% of 3.3 = 1.65v; Zoom into the level nd obtain the time values
+    Cell rise delay = 2.17 – 2.15 = 0.02ns
+   
+  <p align="center">
+  <img src="images/59.png" width="70%" height="70%")
+  </p>
+  <p align="center">
+  <img src="images/60.png" width="70%" height="70%")
+  </p>
 
    
+
+
+    
+
+     
+
+
+   
+      
    
       
    
