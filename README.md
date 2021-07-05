@@ -226,7 +226,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
  <pre><code>/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results/synthesis/$ ls -ltr
  </code></pre>
  
-    -Viewing this at this stage shows the synthesised netlist picorv32a.synthesis.v
+   -Viewing this at this stage shows the synthesised netlist picorv32a.synthesis.v
 <p align="center">
 <img src="images/35.png" width="60%" height="60%")
 </p>
