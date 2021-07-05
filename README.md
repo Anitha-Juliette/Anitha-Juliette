@@ -4,18 +4,18 @@ Advanced Physical Design - OpenLANE Workshop
 &nbsp;&nbsp;&nbsp;&nbsp;[1.1 Talk with computers](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#1.1-Talk-with-computers)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#1.2-SoC-Design-and-Openlane)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.3 Open Source Tools familiarization](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#1.3_Open_Source_Tools_familiarization)  
-&nbsp;[2. DAY 2 - CHIP FLOORPLANNING, PLACEMENT , STANDARD CELL DESIGN AND CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#Day-2---CHIP-FLOORPLANNING,-PLACEMENT,-STANDARD-CELL-DESIGN-AND-CHARACTERIZATION)  
+&nbsp;[2. DAY 2 - CHIP FLOORPLANNING, PLACEMENT , STANDARD CELL DESIGN AND CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#2.-DAY-2---CHIP-FLOORPLANNING,-PLACEMENT,-STANDARD-CELL-DESIGN-AND-CHARACTERIZATION)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.1 Floorplanning](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.2 Placement](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#2.2_Placement)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design and Characterization](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#2.3-Standard-Cell-Design-and-Characterization)  
-&nbsp;[3. DAY 3 - STANDARD CELL INVERTER CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#DAY-3---STANDARD-CELL-INVERTER-CHARACTERIZATION)  
-&nbsp;[4. DAY 4 - MIXED SIGNAL ASIC FLOW(Plugin Standard Cell Inverter with digital design picorv32a in Openlane)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#DAY-4---MIXED-SIGNAL-ASIC-FLOW(Plugin-Standard-Cell-Inverter-with-digital-design-picorv32a-in-Openlane))  
+&nbsp;[3. DAY 3 - STANDARD CELL INVERTER CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#3.-DAY-3---STANDARD-CELL-INVERTER-CHARACTERIZATION)  
+&nbsp;[4. DAY 4 - MIXED SIGNAL ASIC FLOW(Plugin Standard Cell Inverter with digital design picorv32a in Openlane)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.-DAY-4---MIXED-SIGNAL-ASIC-FLOW(Plugin-Standard-Cell-Inverter-with-digital-design-picorv32a-in-Openlane))  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.1-Spice-Extraction-of-Standard-Cell-inverter-through-Magic)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.2 Inclusion of Standard Cell inverter into design](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.2-Inclusion-of-Standard-Cell-inverter-into-design)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.3-Synthesis,-Floorplanning-and-Placement-of-the-modified-design-picorv32a)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.4 Static Timing Analysis(STA)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.4-Static-Timing-Analysis(STA))  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.5 Clock Tree Synthesis(CTS)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.5-Clock-Tree-Synthesis(CTS))  
-&nbsp;[5. DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#DAY-5---POWER-DISTRIBUTION-NETWORK,-ROUTING-AND-GDSII)  
+&nbsp;[5. DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#5.-DAY-5---POWER-DISTRIBUTION-NETWORK,-ROUTING-AND-GDSII)  
 
 ### **DAY 1 - INCEPTION OF OPENSOURCE EDA**
 #### 1.1 Talk with computers
