@@ -157,22 +157,24 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    
    <pre><code>package require openlane 0.9
    </code></pre>     
-<p align="center">
-<img src="images/27.png" width="60%" height="60%")
-</p>
+   <p align="center">
+   <img src="images/27.png" width="60%" height="60%")
+   </p>
    
     - Exploring designs : From *Desktop/work/tools/openlane_working_dir/openlane/designs$ ls -ltr*, list the files
        - Among the various *designs* in openlane we choose *picorv32a* 
+   
      <pre><code>Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ ls -ltr
      </code></pre>
-         - src : contains the verilog file of the RTL design chosen
-         - config.tcl : bypasses the prviously set configurations in the openlane flow
+     -src : contains the verilog file of the RTL design chosen
+     -config.tcl : bypasses the prviously set configurations in the openlane flow
+           
 <p align="center">
 <img src="images/28.png" width="50%" height="50%")
 </p>
    
-     <pre><code>Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ less config.tcl
-     </code></pre>
+     Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ less config.tcl
+     
           
 <p align="center">
 <img src="images/29.png" width="50%" height="50%")
