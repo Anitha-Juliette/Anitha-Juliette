@@ -492,7 +492,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
  <img src="images/63.png" width="150%" height="150%")
  </p>
  <p align="center">
- <img src="images/64.png" width="50%" height="50%")
+ <img src="images/64.png" width="30%" height="30%")
  </p>
     
  * In Tkcon 
@@ -784,41 +784,3 @@ report_wns
   * To generate GDSII file
   <pre><code>**% run_magic**
   </code></pre>
- 
-    
-  
-   
-   
-
-
-  
-
-
-
-
-
-
-
-
-   
-
-
-    
-
-     
-
-
-   
-      
-   
-      
-   
-
-       - 
-      
-
-   
-   
-    
-   
-
