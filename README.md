@@ -154,27 +154,28 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
     - From *Desktop/work/tools/openlane_working_dir/openlane$docker*, run docker 
    <pre><code>./flow.tcl -interactive
    </code></pre>
+   
    <pre><code>package require openlane 0.9
    </code></pre>     
 <p align="center">
 <img src="images/27.png" width="60%" height="60%")
 </p>
    
-       - Exploring designs : From *Desktop/work/tools/openlane_working_dir/openlane/designs$ ls -ltr*, list the files
+    - Exploring designs : From *Desktop/work/tools/openlane_working_dir/openlane/designs$ ls -ltr*, list the files
        - Among the various *designs* in openlane we choose *picorv32a* 
-         <pre><code>Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ ls -ltr
-         </code></pre>
+     <pre><code>Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ ls -ltr
+     </code></pre>
          - src : contains the verilog file of the RTL design chosen
          - config.tcl : bypasses the prviously set configurations in the openlane flow
 <p align="center">
-<img src="images/28.png" width="100%" height="100%")
+<img src="images/28.png" width="50%" height="50%")
 </p>
    
-          <pre><code>Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ less config.tcl
-          </code></pre>
+     <pre><code>Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ less config.tcl
+     </code></pre>
           
 <p align="center">
-<img src="images/29.png" width="60%" height="60%")
+<img src="images/29.png" width="50%" height="50%")
 </p>
 
  * Design preparation step
@@ -182,7 +183,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    <pre><code>% prep -design picorv32a
    </code></pre>
 <p align="center">
-<img src="images/30.png" width="60%" height="60%")
+<img src="images/30.png" width="40%" height="40%")
 </p>
    
    - After the design preparation stage, *runs* directory is created
@@ -218,7 +219,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 * Objectives
   - Flop ratio : (Number of D flip flops/ Total number of cells)*100 = 1613/14876 = 9.06%
 <p align="center">
-<img src="images/34.png" width="60%" height="60%")
+<img src="images/34.png" width="30%" height="30%")
 </p>
   - To see how the results were populated in the run folder
  <pre><code>/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results/synthesis/$ ls -ltr
@@ -231,7 +232,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
  <pre><code>/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/results/synthesis$ less picorv32a.synthesis.v
  </code></pre>  
 <p align="center">
-<img src="images/36.png" width="60%" height="60%")
+<img src="images/36.png" width="100%" height="100%")
 </p>
     - To see how the reports were populated in the run folder
  <pre><code>/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_11-02/reports/synthesis/$ ls -ltr
