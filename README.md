@@ -1,5 +1,8 @@
+<p align="center">
+<img src="images/workshop.png" width="50%" height="50%")
+</p>
 
-[1. DAY 1 - INCEPTION OF OPENSOURCE EDA](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#DAY-1---INCEPTION-OF-OPENSOURCE-EDA)  
+&nbsp;[1. DAY 1 - INCEPTION OF OPENSOURCE EDA](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#DAY-1---INCEPTION-OF-OPENSOURCE-EDA)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.1 Talk with computers](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#day-1---inception-of-opensource-eda)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#12-soc-design-and-openlane)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.3 Open Source Tools familiarization](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#1.3_Open_Source_Tools_familiarization)  
