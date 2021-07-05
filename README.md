@@ -9,9 +9,10 @@ Advanced Physical Design - OpenLANE Workshop
 &nbsp;&nbsp;&nbsp;&nbsp;[2.2 Placement](https://github.com/Anitha-Juliette/Openlane#2.2_Placement)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design and Characterization](https://github.com/Anitha-Juliette/Openlane#2.3_Characterization_of_Standard_Cell_Design)  
 &nbsp;[3. Day 3 - Standard Cell inverter Characterization](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_Characterization)  
-&nbsp;[4. Day 4 - Plugin Standard Cell Inverter on to the design in Openlane Flow](https://github.com/Anitha-Juliette/Openlane#4.Plugin_Standard_Cell_Inverter_on_to_the_design_in_Openlane_Flow)  
-
-
+&nbsp;[4. Day 4 - Plugin Standard Cell Inverter on to the design in Openlane](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_Characterization) 
+&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)
+&nbsp;&nbsp;&nbsp;&nbsp;[4.2 Inclusion of Standard Cell inverter into design](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 
 
 ### Day 1 - Inception of Opensource EDA
@@ -454,7 +455,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
   </p>
  
  * Obtaining the Transient response
-   <pre><code>ngspice 1 -> plot Y vs time A ( plot Y as a function of time by sweeping A)
+  <pre><code>ngspice 1 -> plot Y vs time A ( plot Y as a function of time by sweeping A)
   </code></pre>
   <p align="center">
   <img src="images/60.png" width="70%" height="70%")
@@ -475,6 +476,187 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
   <p align="center">
   <img src="images/62.png" width="50%" height="50%")
   </p>
+ 
+ ### DAY 4 - PLUGIN STANDARD CELL INVERTER ON TO THE DESIGN IN OPENLANE
+ #### 4.1 EXTRACTION OF SPICE NETLIST OF STANDARD CELL INVERTER THROUGH MAGIC
+ * Steps to convert Grid info(magic) into Trackinfo(pdk in openlane)
+     - Only with tracks, PnR can route
+     - Converge grid with track value
+ <pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd$ less tracks.info
+ </code></pre>
+ <p align="center">
+ <img src="images/63.png" width="70%" height="70%")
+ </p>
+ <p align="center">
+ <img src="images/64.png" width="70%" height="70%")
+ </p>
+    
+ * In Tkcon 
+ <pre><code>% grid 0.46um 0.34um 0.23um 0.17um
+ </code></pre>
+ <p align="center">
+ <img src="images/65.png" width="70%" height="70%")
+ </p>
+ <p align="center">
+ <img src="images/66.png" width="70%" height="70%")
+ </p>
+    
+ * I/O ports should lie at the intersection of vertical and horizontal grids
+ <p align="center">
+ <img src="images/67.png" width="70%" height="70%")
+ </p>
+ * Save the matched Grid-Track file in Tkcon
+ <pre><code>% save sky130_vsdinv.mag
+ </code></pre>
+ <p align="center">
+ <img src="images/68.png" width="70%" height="70%")
+ </p>
+ 
+ * Invoke the sky130_vsdinv.mag in Magic 
+<pre><code>03:~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign$ magic -T sky130A.tech sky130_vsdinv.mag
+</code></pre>
+* In tkcon, write the LEF file into vsdstdcell and view it.
+<pre><code>% lef write
+</code></pre>
+<p align="center">
+<img src="images/69.png" width="70%" height="70%")
+</p>
+<p align="center">
+<img src="images/70.png" width="70%" height="70%")
+</p>
+<p align="center">
+<img src="images/71.png" width="70%" height="70%")
+</p>
+
+   
+#### 4.2 INCLUSION OF STANDARD CELL INVERTER INTO DESIGN 
+* Insertion of LEF file into the Source files of Design picorv32a
+<pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign$ cp sky130_vsdinv.lef /home/anitha/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
+</code></pre>
+<p align="center">
+<img src="images/72.png" width="70%" height="70%")
+</p>
+
+* Copy the library file of the standard cell library to the src folder of picorv32a
+<p align="center">
+<img src="images/73.png" width="70%" height="70%")
+</p>
+<pre><code>03:~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign/libs$ cp sky130_fd_sc_hd__typical.lib /home/anitha/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
+</code></pre>
+<p align="center">
+<img src="images/74.png" width="70%" height="70%")
+</p>
+
+* Modify the config.tcl by including the variables below:
+  - LIB_SYNTH : For abc analysis(maps RTL to standard cells)
+  - LIB_MIN,LIB_MAX,LIB_TYPICAL : For STA Analysis
+  - Extra lef
+<pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a$ vim config.tcl
+</code></pre>
+<p align="center">
+<img src="images/75.png" width="70%" height="70%")
+</p>
+
+* merged.lef to be created for the modified file
+<pre><code>% prep -design picorv32a -tag 03-07_18-10 –overwrite (run should be the latest one)
+           % set lefs [glob $::env(DESIGN_DIR)/src/*lef]
+           % add_lefs -src $lefs
+</code></pre>
+<p align="center">
+<img src="images/76.png" width="70%" height="70%")
+</p>
+<p align="center">
+<img src="images/77.png" width="70%" height="70%")
+</p>
+    
+#### 4.3 SYNTHESIS, FLOORPLANNING AND PLACEMENT OF MODIFIED DESIGN picorv32a
+* Synthesis
+  - Run Synthesis on the modified design file 
+<pre><code>% run_synthesis
+</code></pre>
+<p align="center">
+<img src="images/78.png" width="70%" height="70%")
+</p>
+   
+* Floorplan
+<pre><code>% init_floorplan
+</code></pre>
+<p align="center">
+<img src="images/79.png" width="70%" height="70%")
+</p>
+   
+* I/O Placement
+<pre><code>% place_io
+</code></pre>
+<p align="center">
+<img src="images/80.png" width="70%" height="70%")
+</p>
+   
+* Global Placement
+<pre><code>% global_placement_or	
+</code></pre>
+<p align="center">
+<img src="images/81.png" width="70%" height="70%")
+</p>
+
+* Detailed Placement
+<pre><code>% detailed_placement
+</code></pre>
+<p align="center">
+<img src="images/82.png" width="70%" height="70%")
+</p>
+
+* Placing Decoupling Capacitors
+<pre><code>% tap_decap_or
+</code></pre>
+<p align="center">
+<img src="images/83.png" width="70%" height="70%")
+</p>
+
+* Detailed Placement
+<pre><code>% detailed_placement
+</code></pre>
+<p align="center">
+<img src="images/84.png" width="70%" height="70%")
+</p>
+
+* Include the picorv32a.placement.def file into magic 
+<pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/03-07_18-10/results/placement$ magic -T /home/anitha/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def picorv32a.placement.def
+</code></pre>
+<p align="center">
+<img src="images/85.png" width="70%" height="70%")
+</p>
+   
+* The standard cell inverter sky130_vsdinv is founded to be included in the design
+<p align="center">
+<img src="images/86.png" width="70%" height="70%")
+</p>
+ 
+* In Tkcon, type expand to the find the detailed layout of the newly included inverter
+<p align="center">
+<img src="images/87.png" width="70%" height="70%")
+</p>
+<p align="center">
+<img src="images/88.png" width="70%" height="70%")
+</p>
+
+
+   
+
+
+
+
+   
+
+
+   
+
+
+
+
+
+
+
 
    
 
