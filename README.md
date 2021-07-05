@@ -293,7 +293,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    </code></pre>
    
    <p align="center">
-   <img src="images/39.png" width="100%" height="100%")
+   <img src="images/39.png" width="40%" height="40%")
    </p>
    
 **_Run Floorplan_**
@@ -301,24 +301,29 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    <pre><code>03:% run_floorplan
    </code></pre>
    <p align="center">
-   <img src="images/40.png" width="100%" height="100%")
+   <img src="images/40.png" width="200%" height="200%")
    </p>
    
  **_Review output after Floorplan run_**
-   * picorv32a.floorplan.def is created. It gives the Die area
+   * picorv32a.floorplan.def is created. 
    <pre><code>003:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_15-58/results/floorplan$ less picorv32a.floorplan.def
    </code></pre>
    <p align="center">
    <img src="images/41.png" width="100%" height="100%")
    </p>
    
+   * picorv32a.floorplan.def gives the Die area
+   <p align="center">
+   <img src="images/42.png" width="40%" height="40%")
+   </p>
+
    * Actual layout after floorplan : invoked through magic by passing the files sky130A.tech, merged.lef and picorv32a.floorplan.def 
    <pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_15-58/results/floorplan$ magic -T /Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def picorv32a.floorplan.def &
    </code></pre>
    -T : technology
     & : prompt to return back after Magic invocation
    <p align="center">
-   <img src="images/42.png" width="100%" height="100%")
+   <img src="images/43.png" width="100%" height="100%")
    </p>
    
    
