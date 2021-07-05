@@ -35,10 +35,6 @@ Illustrates the chip inside a board with its peripherals. Core of the chip is Fo
    - RTL IP's
    - EDA Tools
    - PDK's(Process Design Kits)
-<p align="center">
-<img src="images/9.png" width="50%" height="50%")
-</p>
-
 * In *Age of Gods*, design industry and Technology(Manufacturing) were closely related. 
 * Lynn Convay and Carver Mead emphasized seperation of both design and technology industries; proposed *structured* design methodology based on Lambda rules; emerging of *Pure Play* and *efabless* companies
 * First ever Open Source PDK : Skywater 130nm
@@ -75,10 +71,10 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
  * Step 6 : Sign off/Layout
   - Physical verification(DRC & LVS)
   - STA
+    
  **_Open Source ASIC Flow with Openlane and Strive Chipsets_**
  * Openlane : Open Source Flow for a *True* open source Tapeout experiment
  * efabless has a family of Soc's calles as Strive( Open PDK, Open EDA, Open RTL); SoC family
- *![](images/20.png)
  * Main goal of Openlane ASIC is *Clean* GDSII with no human interventions; No LVS or DRC or Timing violations
  * Openlane is tuned for Skywater 130nm PDK
  * Openlane Operation
@@ -86,6 +82,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    - Interactive : allows to execute commands and experiment
  * Openlane Design Space exploration : Finds the best set of flow configurations
  * Openlane Design examples : 43 design examples with best configurations
+    
  **_Openlane detailed ASIC Flow_**
   *![](images/21.png)
   * Integrated tools of OpenLane 
@@ -104,12 +101,9 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
   * LEC(Logic Equivalence Check): Compares *netlist obtained after optimization during Physical implementation* with *Gate level netlist* obtained after RTL synthesis : Uses         *Yosys* tool
   * Dealing with Antenna Rules violation :
     - Fabricated metal wire segment(long) can act as antenna -> collects charges and damages transistor gates during fabrication
-  ![](images/22.png) 
-    - Solutions :
+      - Solutions :
       - Bridging
       - Add antenna diode cell to leak away charges
-   ![](images/23.png)  
-   ![](images/24.png) 
   * RC Extraction :  DEF2SPEF
   * Static Timing analysis
       * Open STA using OpenRoad; Output of this stage is a set of Timing parameters that can specify violations if any
