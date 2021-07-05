@@ -9,7 +9,8 @@ Advanced Physical Design - OpenLANE Workshop
 &nbsp;&nbsp;&nbsp;&nbsp;[2.2 Placement](https://github.com/Anitha-Juliette/Openlane#2.2_Placement)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design and Characterization](https://github.com/Anitha-Juliette/Openlane#2.3_Characterization_of_Standard_Cell_Design)  
 &nbsp;[3. Day 3 - Standard Cell inverter Characterization](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_Characterization)  
-&nbsp;[4. Day 4 - Plugin Standard Cell Inverter on to the design in Openlane](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_Characterization)  &nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
+&nbsp;[4. Day 4 - Plugin Standard Cell Inverter on to the design in Openlane](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_C)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.2 Inclusion of Standard Cell inverter into design](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 
