@@ -670,7 +670,7 @@ report_wns
 <p align="center">
 <img src="images/90.png" width="70%" height="70%")
 </p>
-
+   
 * Environmental variables used in STA have to be declared in mybase_sdc since it is outside openlane
 <p align="center">
 <img src="images/91.png" width="70%" height="70%")
