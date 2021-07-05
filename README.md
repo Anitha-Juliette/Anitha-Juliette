@@ -7,9 +7,8 @@ Advanced Physical Design - OpenLANE Workshop
 &nbsp;[2. Day 2 - Chip Floorplanning, Placement, Standard cell Design and Charcterization](https://github.com/Anitha-Juliette/Openlane#2.Day_2_Chip_Floorplanning,_Placement_and_Standard_cell_Design)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.1 Floorplanning](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.2 Placement](https://github.com/Anitha-Juliette/Openlane#2.2_Placement)  
-&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design](https://github.com/Anitha-Juliette/Openlane#2.3_Standard_Cell_Design) 
-&nbsp;&nbsp;&nbsp;&nbsp;[2.4 Characterization of Standard Cell Design](https://github.com/Anitha-Juliette/Openlane#  
-2.4_Characterization_of_Standard_Cell_Design) 
+&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design](https://github.com/Anitha-Juliette/Openlane#2.3_Standard_Cell_Design)   
+&nbsp;&nbsp;&nbsp;&nbsp;[2.4 Characterization of Standard Cell Design](https://github.com/Anitha-Juliette/Openlane#2.4_Characterization_of_Standard_Cell_Design) 
 
 
 
