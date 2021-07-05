@@ -13,6 +13,8 @@ Advanced Physical Design - OpenLANE Workshop
 &nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.2 Inclusion of Standard Cell inverter into design](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.4 Static Timing Analysis(STA)](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.5 Clock Tree Synthesis(CTS))](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 
 
 ### Day 1 - Inception of Opensource EDA
