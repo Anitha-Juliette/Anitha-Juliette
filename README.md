@@ -693,20 +693,56 @@ report_wns
 <p align="center">
 <img src="images/95.png" width="70%" height="70%")
 </p>
-   
+
+#### 4.4 CLOCK TREE SYNTHESIS(CTS)
+* CTS is done prior to routing in Openlane. 
+* CTS adds Clock buffers the Clock Distribution Network and hence the RTL netlist of the design will be modified after CTS
+* Clock skew and Clock jitter are major concerns in the design
+* Triton CTS synthesizes the clock tree
+<pre><code>% run_cts
+</code></pre>
+<p align="center">
+<img src="images/96.png" width="70%" height="70%")
+</p>
+<p align="center">
+<img src="images/97.png" width="70%" height="70%")
+</p>
+
+* Creates picorv32a.synthesis_cts.v file ( Verilog file that is written into Openlane)
+<p align="center">
+<img src="images/98.png" width="70%" height="70%")
+</p>
+
+* To further proceed with Timing analysis using CTS, Openroad, an integrated tool within CTS is invoked
+* It reads merged.lef and picorv32a.cts.def from the respective folders
+* It creates picorv32a_cts.db in Openlane Root directory.
+<pre><code>%openroad
+% read_lef /openLANE_flow/designs/picorv32a/runs/03-07_16-12/tmp/merged.lef
+% read_def /openLANE_flow/designs/picorv32a/runs/03-07_16-12/results/cts/picorv32a.cts.def
+% write_db picorv32a_cts.db
+</code></pre>
+<p align="center">
+<img src="images/99.png" width="70%" height="70%")
+</p>
+
+* Pre-CTS Timing analysis is done to determine set up time and hold time parameters
+<pre><code>% read_db picorv32a_cts.db
+% read_verilog /openLANE_flow/designs/picorv32a/runs/03-07_16-12/results/synthesis/picorv32a.synthesis_cts.v
+% read_liberty -max $::env(LIB_SLOWEST)
+% read_liberty -min $::env(LIB_FASTEST)
+% read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+% set_propagated_clock [all_clocks]
+% report_checks -path_delay min_max -format full_clock_expanded -digits 4
+</code></pre>
+<p align="center">
+<img src="images/100.png" width="70%" height="70%")
+</p>
+
+* Post-CTS Timing analysis is done to determine set up time and hold time parameters
  
-
    
 
-   
-
-
-
-
-   
-
-
-   
+  
 
 
 
