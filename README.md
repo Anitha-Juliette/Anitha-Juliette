@@ -17,7 +17,7 @@ Advanced Physical Design - OpenLANE Workshop
 &nbsp;&nbsp;&nbsp;&nbsp;[4.5 Clock Tree Synthesis(CTS)](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#4.5-Clock-Tree-Synthesis(CTS))  
 &nbsp;[5. DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#DAY-5---POWER-DISTRIBUTION-NETWORK,-ROUTING-AND-GDSII)  
 
-### DAY 1 - INCEPTION OF OPENSOURCE EDA
+### **DAY 1 - INCEPTION OF OPENSOURCE EDA**
 #### 1.1 Talk with computers
 **_Chip Overview_**
 Illustrates the chip inside a board with its peripherals. Core of the chip is Foundry IP's and Macros integrated on a Die inside a Package with I/O pins  
