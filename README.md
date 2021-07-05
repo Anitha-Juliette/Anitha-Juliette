@@ -321,6 +321,9 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
      - invoked through magic by passing the files sky130A.tech, merged.lef and picorv32a.floorplan.def 
    <pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_15-58/results/floorplan$ magic -T /Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def picorv32a.floorplan.def &
    </code></pre>
+   sky130A.tech : Technology file invoked from Magic
+   merged.lef   : Created from Preperation stage
+   picorv32a.floorplan.def: Created from Floorplan stage
    -T : technology
     & : prompt to return back after Magic invocation
    <p align="center">
@@ -331,6 +334,50 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    <p align="center">
    <img src="images/44.png" width="100%" height="100%")
    </p>
+      
+#### 2.2 PLACEMENT
+     * Binds netlist with physical cells
+     * Library has various flavours of cells
+     * Netlist is placed onto the floorplan
+     * Placement is done unde following stages
+       - Initial Placement of design
+       - Optimized placement using wire length and capacitance. Repeaters have to be placed for maintaining Signal integrity
+       - Final placement optimization
+     * Congestion aware placement using RePIAce
+       - Global placement(coarse placement; no legalization)
+       - Detailed placement(legalization)
+     * Placement ensures that standard cells are placed in rows
+   <p align="center">
+   <img src="images/45.png" width="100%" height="100%")
+   </p>
+      
+   <pre><code>%run_placement
+   </code></pre>
+       - Performs global placement
+       - Creates picorv32a.placement.def 
+   
+   * It can be invoked as Layout in Magic using sky130A.tech, merged.lef and picorv32a.placement.def 
+   sky130A.tech : Technology file invoked from Magic
+   merged.lef   : Created from Preperation stage
+   picorv32a.floorplan.def: Created from Floorplan stage
+   <pre><code>03:~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/02-07_15-58/results/placement$ magic -T /home/anitha/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def picorv32a.placement.def &
+   </code></pre>
+       - Performs global placement
+       - Creates picorv32a.placement.def
+   <p align="center">
+   <img src="images/46.png" width="100%" height="100%")
+   </p>
+   <p align="center">
+   <img src="images/47.png" width="100%" height="100%")
+   </p>
+
+   
+   
+      
+   
+
+       - 
+      
 
    
    
