@@ -400,7 +400,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
  * Extraction of Spice Netlist :
    - In tkcon2.3 , in vsdstdcelldesign directory  
    <pre><code>Extract all
-  </code></pre>
+   </code></pre>  
    - Sky130_inv.ext is created
   
   <p align="center">
@@ -409,9 +409,9 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    
    - In Tkcon,
   <pre><code>Ext2spice cthresh 0 rthresh 0  
-   Ext2spice
+             Ext2spice
   </code></pre>
-     - Sky130_inv.spice is created from Sky130_inv.ext
+    - Sky130_inv.spice is created from Sky130_inv.ext
   
   <p align="center">
   <img src="images/53.png" width="70%" height="70%")
@@ -469,7 +469,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
   <img src="images/61.png" width="70%" height="70%")
   </p>
   <p align="center">
-  <img src="images/62.png" width="70%" height="70%")
+  <img src="images/62.png" width="50%" height="50%")
   </p>
 
    
