@@ -1,21 +1,21 @@
 Advanced Physical Design - OpenLANE Workshop
 
-&nbsp;[1. DAY 1 - INCEPTION OF OPENSOURCE EDA](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#Day_1-Inception_of_Opensource_EDA)  
-&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Talk with Computers](https://github.com/Anitha-Juliette/Openlane#1.1_Talk_with_Computers)  
+&nbsp;[1. DAY 1 - INCEPTION OF OPENSOURCE EDA](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#1. DAY 1 - INCEPTION OF OPENSOURCE EDA)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.1 TALK WITH COMPUTERS](https://github.com/Anitha-Juliette/Openlane#1.1 TALK WITH COMPUTERS)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane#1.2_Invoking_Openlane)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.3 Open Source Tools familiarization](https://github.com/Anitha-Juliette/Openlane#1.3_Open_Source_Tools_familiarization)  
-&nbsp;[2. Day 2 - Chip Floorplanning, Placement, Standard cell Design and Charcterization](https://github.com/Anitha-Juliette/Openlane#2.Day_2_Chip_Floorplanning,_Placement_and_Standard_cell_Design)  
+&nbsp;[2. Day 2 - CHIP FLOORPLANNING, PLACEMENT , STANDARD CELL DESIGN AND CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane#Day 2 - CHIP FLOORPLANNING, PLACEMENT , STANDARD CELL DESIGN AND CHARACTERIZATION)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.1 Floorplanning](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.2 Placement](https://github.com/Anitha-Juliette/Openlane#2.2_Placement)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design and Characterization](https://github.com/Anitha-Juliette/Openlane#2.3_Characterization_of_Standard_Cell_Design)  
-&nbsp;[3. Day 3 - Standard Cell inverter Characterization](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_Characterization)  
-&nbsp;[4. Day 4 - Mixed Signal ASIC Flow(Plugin Standard Cell Inverter with digital design picorv32a in Openlane)](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_C)  
+&nbsp;[3. DAY 3 - STANDARD CELL INVERTER CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane#DAY 3 - STANDARD CELL INVERTER CHARACTERIZATION)  
+&nbsp;[4. Day 4 - MIXED SIGNAL ASIC FLOW(Plugin Standard Cell Inverter with digital design picorv32a in Openlane)](https://github.com/Anitha-Juliette/Openlane#Day 4 - MIXED SIGNAL ASIC FLOW(Plugin Standard Cell Inverter with digital design picorv32a in Openlane)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.2 Inclusion of Standard Cell inverter into design](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.4 Static Timing Analysis(STA)](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[4.5 Clock Tree Synthesis(CTS))](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
-&nbsp;[5. Day 5 - Power Distribution Network, Routing and GDSII](https://github.com/Anitha-Juliette/Openlane#3._Standard_Cell_inverter_Characterization)  
+&nbsp;[5. DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII](https://github.com/Anitha-Juliette/Openlane#DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII)  
 
 ### DAY 1 - INCEPTION OF OPENSOURCE EDA
 #### 1.1 TALK WITH COMPUTERS
@@ -380,7 +380,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 * Circuit and Layout design is done using Magic and Guna taking PDKs, DRC and LVS rules, SPICE models, library & user-defined specs as inputs  
 * Outputs are CDL (Circuit Description Language), GDSII, LEF(Library Exchange Format), Spice extracted netlist, timing, noise, power libs.  
 
- ### DAY 3 - STANDARD CLL INVERTER CHARACTERIZATION
+ ### DAY 3 - STANDARD CELL INVERTER CHARACTERIZATION
 * In this workshop, a Standard cell inverter layout from Github is imported into Openlane environment to characterize the cell(Timing, Power and Noise analysis  
 * Clone the standard cell inverter layout from github into openlane environment:
    <pre><code>
