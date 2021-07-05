@@ -56,7 +56,10 @@ Illustrates the chip inside a board with its peripherals. Core of the chip is Fo
       - Chip Floor planning
       - Macro Floor planning
       - Power planning : Uses upper metal layers rather than lower metal layers
- ![](images/14.png)
+ <p align="center">
+<img src="images/14.png" width="100%" height="80%")
+</p>
+
  * Step 3 : Placement - Macros will place cells(gate level netlist) onto virtual rows. The cells should be placed close so as to ensure proer routing
     - Global placements : 
    - Detailed placements :
@@ -84,7 +87,10 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
  * Openlane Design examples : 43 design examples with best configurations
     
  **_Openlane detailed ASIC Flow_**
-  *![](images/21.png)
+ <p align="center">
+<img src="images/21.png" width="50%" height="50%")
+</p>
+
   * Integrated tools of OpenLane 
     - OpenRoad
     - magic VLSI layout Tool
