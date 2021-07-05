@@ -1,24 +1,24 @@
 Advanced Physical Design - OpenLANE Workshop
 
 &nbsp;[1. DAY 1 - INCEPTION OF OPENSOURCE EDA](https://github.com/Anitha-Juliette/Openlane/blob/main/README.md#DAY-1---INCEPTION-OF-OPENSOURCE-EDA)  
-&nbsp;&nbsp;&nbsp;&nbsp;[1.1 TALK WITH COMPUTERS](https://github.com/Anitha-Juliette/Openlane#1.1 TALK WITH COMPUTERS)  
-&nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane#1.2_Invoking_Openlane)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.1 Talk with computers](https://github.com/Anitha-Juliette/Openlane#1.1-Talk-with-computers)  
+&nbsp;&nbsp;&nbsp;&nbsp;[1.2 SoC Design and Openlane](https://github.com/Anitha-Juliette/Openlane#1.2_SoC-Design-and-Openlane)  
 &nbsp;&nbsp;&nbsp;&nbsp;[1.3 Open Source Tools familiarization](https://github.com/Anitha-Juliette/Openlane#1.3_Open_Source_Tools_familiarization)  
-&nbsp;[2. Day 2 - CHIP FLOORPLANNING, PLACEMENT , STANDARD CELL DESIGN AND CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane#Day 2 - CHIP FLOORPLANNING, PLACEMENT , STANDARD CELL DESIGN AND CHARACTERIZATION)  
+&nbsp;[2. DAY 2 - CHIP FLOORPLANNING, PLACEMENT , STANDARD CELL DESIGN AND CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane#Day-2---CHIP-FLOORPLANNING,-PLACEMENT,-STANDARD-CELL-DESIGN-AND-CHARACTERIZATION)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.1 Floorplanning](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
 &nbsp;&nbsp;&nbsp;&nbsp;[2.2 Placement](https://github.com/Anitha-Juliette/Openlane#2.2_Placement)  
-&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design and Characterization](https://github.com/Anitha-Juliette/Openlane#2.3_Characterization_of_Standard_Cell_Design)  
-&nbsp;[3. DAY 3 - STANDARD CELL INVERTER CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane#DAY 3 - STANDARD CELL INVERTER CHARACTERIZATION)  
-&nbsp;[4. Day 4 - MIXED SIGNAL ASIC FLOW(Plugin Standard Cell Inverter with digital design picorv32a in Openlane)](https://github.com/Anitha-Juliette/Openlane#Day 4 - MIXED SIGNAL ASIC FLOW(Plugin Standard Cell Inverter with digital design picorv32a in Openlane)  
-&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
-&nbsp;&nbsp;&nbsp;&nbsp;[4.2 Inclusion of Standard Cell inverter into design](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
-&nbsp;&nbsp;&nbsp;&nbsp;[4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
-&nbsp;&nbsp;&nbsp;&nbsp;[4.4 Static Timing Analysis(STA)](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
-&nbsp;&nbsp;&nbsp;&nbsp;[4.5 Clock Tree Synthesis(CTS))](https://github.com/Anitha-Juliette/Openlane#2.1_Floorplanning)  
-&nbsp;[5. DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII](https://github.com/Anitha-Juliette/Openlane#DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII)  
+&nbsp;&nbsp;&nbsp;&nbsp;[2.3 Standard Cell Design and Characterization](https://github.com/Anitha-Juliette/Openlane#2.3-Standard-Cell-Design-and-Characterization)  
+&nbsp;[3. DAY 3 - STANDARD CELL INVERTER CHARACTERIZATION](https://github.com/Anitha-Juliette/Openlane#DAY-3---STANDARD-CELL-INVERTER-CHARACTERIZATION)  
+&nbsp;[4. DAY 4 - MIXED SIGNAL ASIC FLOW(Plugin Standard Cell Inverter with digital design picorv32a in Openlane)](https://github.com/Anitha-Juliette/Openlane#DAY-4---MIXED-SIGNAL-ASIC-FLOW(Plugin-Standard-Cell-Inverter-with-digital-design-picorv32a-in-Openlane))  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.1 Spice Extraction of Standard Cell inverter through Magic](https://github.com/Anitha-Juliette/Openlane#4.1-Spice-Extraction-of-Standard-Cell-inverter-through-Magic)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.2 Inclusion of Standard Cell inverter into design](https://github.com/Anitha-Juliette/Openlane#4.2-Inclusion-of-Standard-Cell-inverter-into-design)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a](https://github.com/Anitha-Juliette/Openlane#4.3-Synthesis,-Floorplanning-and-Placement-of-the-modified-design-picorv32a)  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.4 Static Timing Analysis(STA)](https://github.com/Anitha-Juliette/Openlane#4.4-Static-Timing-Analysis(STA))  
+&nbsp;&nbsp;&nbsp;&nbsp;[4.5 Clock Tree Synthesis(CTS)](https://github.com/Anitha-Juliette/Openlane#4.5-Clock-Tree-Synthesis(CTS))  
+&nbsp;[5. DAY 5 - POWER DISTRIBUTION NETWORK, ROUTING AND GDSII](https://github.com/Anitha-Juliette/Openlane#DAY-5---POWER-DISTRIBUTION-NETWORK,-ROUTING-AND-GDSII)  
 
 ### DAY 1 - INCEPTION OF OPENSOURCE EDA
-#### 1.1 TALK WITH COMPUTERS
+#### 1.1 Talk with computers
 **_Chip Overview_**
 Illustrates the chip inside a board with its peripherals. Core of the chip is Foundry IP's and Macros integrated on a Die inside a Package with I/O pins  
 
@@ -41,7 +41,7 @@ Illustrates the chip inside a board with its peripherals. Core of the chip is Fo
 <img src="images/7.png" width="50%" height="50%")
 </p>
 
-#### **1.2 SoC DESIGN AND OPENLANE**
+#### **SoC Design and Openlane**
 **_Components of Open Source digital ASIC design_**
 * Components
    - RTL IP's
@@ -126,7 +126,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
   * DRC and Spice extraction from Layout : Magic 
   * LVS : Magic and Netgen  
 
-#### **1.3 OPEN SOURCE TOOLS FAMILIARIZATION**
+#### **Open Source Tools familiarization**
     
 **_Openlane Directory structure in detail_**
 * Basic Linux commands
@@ -267,8 +267,8 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 * efabless openlane github : detailed study in this link
    https://github.com/The-OpenROAD-Project/OpenLane
    
-### Day 2 - CHIP FLOORPLANNING, PLACEMENT , STANDARD CELL DESIGN AND CHARACTERIZATION
-#### 2.1 FLOORPLANNING
+### DAY 2 - CHIP FLOORPLANNING, PLACEMENT, STANDARD CELL DESIGN AND CHARACTERIZATION
+#### 2.1 Floorplanning
    * Setting Die area
    * Setting Core area(Macro and row cells)
    * Specification of Aspect ratio
@@ -339,7 +339,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    <img src="images/44.png" width="100%" height="100%")
    </p>
       
-#### 2.2 PLACEMENT
+#### 2.2 Placement
       
    * Binds netlist with physical cells
    * Library has various flavours of cells
@@ -375,7 +375,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
    <img src="images/47.png" width="70%" height="70%")
    </p>
       
-#### **2.3 STANDARD CELL DESIGN AND CHARACTERIZATION**
+#### **2.3 Standard Cell Design and Characterization**
 * Standard cell design involves the creation of Layout(GDSII) of  cells such as inverter, buffer, gates, which is devloped into IP core design  
 * Circuit and Layout design is done using Magic and Guna taking PDKs, DRC and LVS rules, SPICE models, library & user-defined specs as inputs  
 * Outputs are CDL (Circuit Description Language), GDSII, LEF(Library Exchange Format), Spice extracted netlist, timing, noise, power libs.  
@@ -480,7 +480,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
   </p>
  
  ### DAY 4 - PLUGIN STANDARD CELL INVERTER ON TO THE DESIGN IN OPENLANE
- #### 4.1 EXTRACTION OF SPICE NETLIST OF STANDARD CELL INVERTER THROUGH MAGIC
+ #### 4.1 Spice Extraction of Standard Cell inverter through Magic
  * Steps to convert Grid info(magic) into Trackinfo(pdk in openlane)
      - Only with tracks, PnR can route
      - Converge grid with track value
@@ -531,7 +531,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 </p>
 
    
-#### 4.2 INCLUSION OF STANDARD CELL INVERTER INTO DESIGN 
+#### 4.2 Inclusion of Standard Cell inverter into design
 * Insertion of LEF file into the Source files of Design picorv32a
 <pre><code>anitha@openlane-workshop-03:~/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign$ cp sky130_vsdinv.lef /home/anitha/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src
 </code></pre>
@@ -571,7 +571,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 <img src="images/77.png" width="70%" height="70%")
 </p>
     
-#### 4.3 SYNTHESIS, FLOORPLANNING AND PLACEMENT OF MODIFIED DESIGN picorv32a
+#### 4.3 Synthesis, Floorplanning and Placement of the modified design picorv32a
 * Synthesis
   - Run Synthesis on the modified design file 
 <pre><code>% run_synthesis
@@ -642,7 +642,7 @@ Creates a Clock distribution network to distribute Clock with minimum skew to al
 <img src="images/88.png" width="70%" height="70%")
 </p>
    
-#### 4.3 STATIC TIMING ANALYSIS(STA)
+#### 4.3 Static Timing Analysis(STA)
 * STA is a tool for analyzing the timing performance
 * STA provides Slew and Delay for every cell inside the design for varying values of fanout, capacitances etc..
 * STA reports the Total Negative Slack(TNS)(total path delay) and Worst Negative Slack(TWS)(Worst path delay)
@@ -694,7 +694,7 @@ report_wns
 <img src="images/95.png" width="70%" height="70%")
 </p>
 
-#### 4.4 CLOCK TREE SYNTHESIS(CTS)
+#### 4.4 Clock Tree Synthesis(CTS)
 * CTS is done prior to routing in Openlane. 
 * CTS adds Clock buffers the Clock Distribution Network and hence the RTL netlist of the design will be modified after CTS
 * Clock skew and Clock jitter are major concerns in the design
